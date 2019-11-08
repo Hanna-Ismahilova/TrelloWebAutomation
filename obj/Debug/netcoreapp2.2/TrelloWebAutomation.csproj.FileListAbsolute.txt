@@ -1,0 +1,16 @@
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\bin\Debug\netcoreapp2.2\TrelloWebAutomation.deps.json
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\bin\Debug\netcoreapp2.2\TrelloWebAutomation.runtimeconfig.json
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\bin\Debug\netcoreapp2.2\TrelloWebAutomation.runtimeconfig.dev.json
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\bin\Debug\netcoreapp2.2\TrelloWebAutomation.dll
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\bin\Debug\netcoreapp2.2\TrelloWebAutomation.pdb
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\bin\Debug\netcoreapp2.2\UIAtomationFramework.dll
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\bin\Debug\netcoreapp2.2\UIAtomationFramework.pdb
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\obj\Debug\netcoreapp2.2\TrelloWebAutomation.csprojAssemblyReference.cache
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\obj\Debug\netcoreapp2.2\TrelloWebAutomation.AssemblyInfoInputs.cache
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\obj\Debug\netcoreapp2.2\TrelloWebAutomation.AssemblyInfo.cs
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\obj\Debug\netcoreapp2.2\TrelloWebAutomation.csproj.CopyComplete
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\obj\Debug\netcoreapp2.2\TrelloWebAutomation.dll
+C:\Users\Hanna_Ismahilova\source\repos\TrelloWebAutomation\TrelloWebAutomation\obj\Debug\netcoreapp2.2\TrelloWebAutomation.pdb
