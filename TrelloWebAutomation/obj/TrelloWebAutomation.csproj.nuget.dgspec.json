@@ -29,6 +29,88 @@
         },
         "frameworks": {
           "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj": {
+                "projectPath": "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[77.0.3865.4000, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj",
+        "projectName": "UIAtomationFramework",
+        "projectPath": "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj",
+        "packagesPath": "C:\\Users\\Hanna_Ismahilova\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hanna_Ismahilova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
             "projectReferences": {}
           }
         },
@@ -55,16 +137,34 @@
               "target": "Package",
               "version": "[3.11.0, )"
             },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[77.0.3865.4000, )"
+            },
             "nunit": {
               "target": "Package",
               "version": "[3.11.0, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
