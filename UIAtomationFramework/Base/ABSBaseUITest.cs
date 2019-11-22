@@ -7,12 +7,16 @@ namespace UIAtomationFramework.Base
     {
     public abstract class ABSBaseUITest
         {
-        private IWebDriver _webDriver;
+        protected static IWebDriver _webDriver;
 
         public ABSBaseUITest (IWebDriver webDriver )
             {
             _webDriver = webDriver;
             }
+        public ABSBaseUITest()
+        {
+
+        }
 
         //create loop which will searching according to set time + assertation if not found
         public IWebElement FinderElement (By locator )
