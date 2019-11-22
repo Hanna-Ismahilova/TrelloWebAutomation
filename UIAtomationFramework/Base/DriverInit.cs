@@ -9,8 +9,17 @@ namespace UIAtomationFramework.Base
 {
     public class DriverInit : BaseUITest
     {
+        public DriverInit()
+        {
 
-        public static IWebDriver WebDriverStart()
+        }
+        public DriverInit(IWebDriver webDriver) : base(webDriver)
+        {
+        }
+
+    
+
+        public IWebDriver WebDriverStart()
         {
             
             switch (AppConfig.appSettings.Browser.ToLower())
@@ -18,17 +27,18 @@ namespace UIAtomationFramework.Base
                 case "chrome":
                     return _webDriver is null 
                                     ? _webDriver=new ChromeDriver() : _webDriver;
+                    //todo Firefox,IE itd
                 default:
                     return null;
             }
         }
 
-        public static void LoadPage()
+        public void LoadPage()
         {
             _webDriver.Url = AppConfig.appSettings.URL;
         }
 
-        public static void WebDriverStop()
+        public void WebDriverStop()
         {
             _webDriver.Close();
         }

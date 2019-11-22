@@ -6,14 +6,11 @@ namespace UIAtomationFramework.Base
     {
         public BaseUITest(IWebDriver webDriver) : base(webDriver)
         {
-
         }
-
         public BaseUITest()
         {
 
         }
-
 
 
     }

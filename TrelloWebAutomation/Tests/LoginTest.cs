@@ -12,13 +12,13 @@ namespace TrelloWebAutomation.Tests
 
     public class LoginTest : DriverInit
     {
-        
+        private IWebDriver webDriver;
 
         [SetUp]
         public void SetUp()
         {
             AppConfig.Load();
-            WebDriverStart();
+            webDriver = WebDriverStart();
             LoadPage();
 
 
@@ -33,7 +33,7 @@ namespace TrelloWebAutomation.Tests
         [Test]
         public void Test001()
         {
-            var login = new LoginPage();
+            var login = new LoginPage(webDriver);
             
         }
 
