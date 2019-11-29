@@ -7,17 +7,16 @@ using UIAtomationFramework.Helpers;
 
 namespace UIAtomationFramework.Base
 {
-    public class DriverInit : BaseUITest
+    public class DriverInit : BaseUIPage
     {
-        public DriverInit()
-        {
-
-        }
+      
         public DriverInit(IWebDriver webDriver) : base(webDriver)
         {
         }
+        public DriverInit ( )
+            {
 
-    
+            }
 
         public IWebDriver WebDriverStart()
         {
@@ -26,7 +25,7 @@ namespace UIAtomationFramework.Base
             {
                 case "chrome":
                     return _webDriver is null 
-                                    ? _webDriver=new ChromeDriver() : _webDriver;
+                                    ? _webDriver = new ChromeDriver() : _webDriver;
                     //todo Firefox,IE itd
                 default:
                     return null;

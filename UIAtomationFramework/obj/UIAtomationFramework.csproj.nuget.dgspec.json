@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj": {}
+    "C:\\Users\\Hanna_Ismahilova\\Documents\\MY_PROJECTS\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj": {
+    "C:\\Users\\Hanna_Ismahilova\\Documents\\MY_PROJECTS\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj",
+        "projectUniqueName": "C:\\Users\\Hanna_Ismahilova\\Documents\\MY_PROJECTS\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj",
         "projectName": "UIAtomationFramework",
-        "projectPath": "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj",
+        "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\MY_PROJECTS\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj",
         "packagesPath": "C:\\Users\\Hanna_Ismahilova\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\obj\\",
+        "outputPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\MY_PROJECTS\\TrelloWebAutomation\\UIAtomationFramework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -66,6 +66,10 @@
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
               "version": "[77.0.3865.4000, )"
+            },
+            "elmah.corelibrary": {
+              "target": "Package",
+              "version": "[1.2.2, )"
             },
             "nunit": {
               "target": "Package",

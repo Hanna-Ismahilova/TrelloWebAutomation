@@ -1,10 +1,10 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using TrelloWebAutomation.Pages;
 using UIAtomationFramework.Base;
 using UIAtomationFramework.Base.Models;
 using UIAtomationFramework.Helpers;
+using UIAtomationFramework.PageObjects;
 
 namespace TrelloWebAutomation.Tests
 {
@@ -25,15 +25,21 @@ namespace TrelloWebAutomation.Tests
         }
 
         [TearDown]
-        public void TeatDown()
+        public void TearDown()
         {
             WebDriverStop();
         }
 
+
+        //TODO: add adnotation Retry to repeat the test if it is not successful
         [Test]
-        public void Test001()
+        public void Login()
         {
-            var login = new LoginPage(webDriver);
+            LoginPage login = new LoginPage(webDriver);
+            login.LoginToTrello();
+            //Assertion object
+
+
             
         }
 

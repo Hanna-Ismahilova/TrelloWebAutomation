@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "elmah.corelibrary/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/Elmah.dll": {}
+        },
+        "runtime": {
+          "lib/Elmah.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/15.9.0": {
         "type": "package",
         "compile": {
@@ -1644,6 +1653,18 @@
     }
   },
   "libraries": {
+    "elmah.corelibrary/1.2.2": {
+      "sha512": "OEx4ds9r2bw2/45VZwfw11lLv4y+mC2FUZxp7LsjmauFxj92K1kx8hafSBvls+V9s0WH0wv84B1LfWN/EaGfkg==",
+      "type": "package",
+      "path": "elmah.corelibrary/1.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "elmah.corelibrary.1.2.2.nupkg.sha512",
+        "elmah.corelibrary.nuspec",
+        "lib/Elmah.dll"
+      ]
+    },
     "Microsoft.CodeCoverage/15.9.0": {
       "sha512": "oherNadUtHKqFQbtdRKXgPvZVWyGkOeS83pFWT864587npS7JIFWIJ/LJV0c25cWNkCytn2S9XGSSkKscnNFAQ==",
       "type": "package",
@@ -5729,6 +5750,7 @@
       "Selenium.Support >= 3.141.0",
       "Selenium.WebDriver >= 3.141.0",
       "Selenium.WebDriver.ChromeDriver >= 77.0.3865.4000",
+      "elmah.corelibrary >= 1.2.2",
       "nunit >= 3.11.0"
     ]
   },
@@ -5739,11 +5761,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj",
+      "projectUniqueName": "C:\\Users\\Hanna_Ismahilova\\Documents\\MY_PROJECTS\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj",
       "projectName": "UIAtomationFramework",
-      "projectPath": "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj",
+      "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\MY_PROJECTS\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj",
       "packagesPath": "C:\\Users\\Hanna_Ismahilova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\obj\\",
+      "outputPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\MY_PROJECTS\\TrelloWebAutomation\\UIAtomationFramework\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5799,6 +5821,10 @@
             "target": "Package",
             "version": "[77.0.3865.4000, )"
           },
+          "elmah.corelibrary": {
+            "target": "Package",
+            "version": "[1.2.2, )"
+          },
           "nunit": {
             "target": "Package",
             "version": "[3.11.0, )"
@@ -5817,5 +5843,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'elmah.corelibrary 1.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "libraryId": "elmah.corelibrary",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    }
+  ]
 }
