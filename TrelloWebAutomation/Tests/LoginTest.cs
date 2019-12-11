@@ -21,7 +21,6 @@ namespace TrelloWebAutomation.Tests
             webDriver = WebDriverStart();
             LoadPage();
 
-
         }
 
         [TearDown]
@@ -30,18 +29,22 @@ namespace TrelloWebAutomation.Tests
             WebDriverStop();
         }
 
+        //TODO: negative test cases
 
-        //TODO: add adnotation Retry to repeat the test if it is not successful
-        [Test]
+        [Test, Retry(3)]
         public void Login()
         {
+
             LoginPage login = new LoginPage(webDriver);
             login.LoginToTrello();
-            //Assertion object
 
-
+            CreateFirstBoardPage welcome = new CreateFirstBoardPage(webDriver);
             
-        }
+            Assert.AreEqual("Welcome to Trello!", welcome.GetWelcomeText);
 
-    }
+
+
+            }
+
+        }
 }
