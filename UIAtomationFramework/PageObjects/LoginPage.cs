@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
+using System.Net.Mime;
 using System.Text;
 using UIAtomationFramework.Base;
 using UIAtomationFramework.Base.Elements;
@@ -19,31 +20,74 @@ namespace UIAtomationFramework.PageObjects
         private By loginWithAtlassianButton = By.CssSelector("#login");
         private By continueButton = By.CssSelector("button#login-submit  .css-t5emrf");
         private By enterPasswordInput = By.CssSelector("input#password");
-        private By logInButtonOnLoginPage = By.CssSelector("button#login-submit  .css-t5emrf > span");
+        private By logInButtonOnLoginPage = By.CssSelector("input#login");
+        private By loginButtonOnLoginPageForValidation = By.XPath("//input[@id='login']");
+
+        private readonly By missingEmail = By.CssSelector("div#error > .error-message");
+        private readonly By missingPassword = By.CssSelector("div#error > .error-message");
+        private readonly By tooManyIncorrectPwdAttempts = By.XPath("//div[@id='error']/p[@class='error-message']");
         
+
+
+
+
 
         public LoginPage ( IWebDriver webDriver ) : base(webDriver)
             {
             }
 
-        public void LoginToTrello()
+        public void LoginToTrello (string login, string pwd)
             {
             _webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
-            SafeClick(logInButtonOnWelcomePage);
             var email =  FindElement(enterEmailInput);
-            email.SendKeys(AppConfig.appSettings.Login);
-            SafeClick(loginWithAtlassianButton);
-            SafeClick(continueButton);
+            email.SendKeys(login);
+            //SafeClick(loginWithAtlassianButton);
+            //SafeClick(continueButton);
             var password = FindElement(enterPasswordInput);
-            password.SendKeys(AppConfig.appSettings.Password);
+            password.SendKeys(pwd);
 
             _webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-
             DoubleClick(logInButtonOnLoginPage);
            
             }
+        public void GoToLoginPage ( )
+            {
+            SafeClick(logInButtonOnWelcomePage);
 
-        //TODO: method for negative tests LoginToTrello
+            }
+
+        public string GetEmailValidationErrorMessage 
+            {
+
+            get { return FindElement(missingEmail).Text; }
+
+            }
+
+        public string GetPwdValidationErrorMessage
+            {
+            get { return FindElement(missingPassword).Text; }
+            }
+
+        public string  GetTooManyPasswordAttemptsValidationErrorMessage ( )
+            {
+            var errorMessage = "Too many incorrect password attempts.";
+            do
+                {
+                SafeClick(loginButtonOnLoginPageForValidation);
+
+                } while ( tooManyIncorrectPwdAttempts == null );
+
+            return errorMessage;
+            
+
+            }
+
+        //Create method which will check if 'Too many incorrect password attempts. You can try again in 300 seconds' is displayed and will check
+        // till it disappears and then will click 'login' button again and will check if Invalid password error message appears.
+      
+
+
+
         }
     }
