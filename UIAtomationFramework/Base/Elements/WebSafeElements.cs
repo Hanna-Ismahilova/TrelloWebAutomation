@@ -87,18 +87,8 @@ namespace UIAtomationFramework.Base.Elements
         #region InterfaceImplementation
         public IWebElement FindElement ( By locator )
             {
-            //TODO: take as example from webautomation project
-
-            //Stopwatch stopwatch = new Stopwatch();
-            //stopwatch.Start();
-
             //do
-            //    {
-            //    _webElement = FindElement(_locator);
-            //    }
-            //while ( stopwatch.Elapsed.TotalSeconds <= _timeout && _webElement == null );
-
-            //return ReturnOrFail(_webElement);
+           
             try
                 {
                 return _selenium.FindElement(locator);
@@ -111,6 +101,7 @@ namespace UIAtomationFramework.Base.Elements
                 }
             return _webDriver.FindElement(locator);
             }
+        //while 
 
         public ReadOnlyCollection<IWebElement> FindElements ( By by )
             {

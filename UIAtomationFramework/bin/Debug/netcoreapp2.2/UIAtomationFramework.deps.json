@@ -12,7 +12,7 @@
           "NUnit3TestAdapter": "3.11.0",
           "Selenium.Support": "3.141.0",
           "Selenium.WebDriver": "3.141.0",
-          "Selenium.WebDriver.ChromeDriver": "77.0.3865.4000",
+          "Selenium.WebDriver.ChromeDriver": "79.0.3945.3600",
           "elmah.corelibrary": "1.2.2",
           "NUnit": "3.11.0"
         },
@@ -443,7 +443,7 @@
           }
         }
       },
-      "Selenium.WebDriver.ChromeDriver/77.0.3865.4000": {},
+      "Selenium.WebDriver.ChromeDriver/79.0.3945.3600": {},
       "System.AppContext/4.1.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -1109,12 +1109,12 @@
       "path": "selenium.webdriver/3.141.0",
       "hashPath": "selenium.webdriver.3.141.0.nupkg.sha512"
     },
-    "Selenium.WebDriver.ChromeDriver/77.0.3865.4000": {
+    "Selenium.WebDriver.ChromeDriver/79.0.3945.3600": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RVLfOwToKJ5Dfm3PnKGhYhXlRpQolgYHS5jPd4a/e66RoCQULj7RtegvQrU/PA3DWBmA+p5QHFoNG+Klg419Sg==",
-      "path": "selenium.webdriver.chromedriver/77.0.3865.4000",
-      "hashPath": "selenium.webdriver.chromedriver.77.0.3865.4000.nupkg.sha512"
+      "sha512": "sha512-ng2VdpBOI4ciRJpcT7mxgEBU9FGYZ+T7reHdgrqKXoKJtTRZvqKee4qxRPdkBSGxAZKcg9wzgKr3E7YEfacy/Q==",
+      "path": "selenium.webdriver.chromedriver/79.0.3945.3600",
+      "hashPath": "selenium.webdriver.chromedriver.79.0.3945.3600.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",
