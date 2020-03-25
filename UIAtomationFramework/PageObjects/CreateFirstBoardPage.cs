@@ -6,7 +6,7 @@ namespace UIAtomationFramework.PageObjects
     public class CreateFirstBoardPage : BaseUIPage
         {
 
-        private readonly By welcomeToTrello = By.XPath("//div[@class='board-name']//h2/span");
+        private readonly By welcomeToTrelloText = By.XPath("//div[@class='board-name']//h2/span");
 
         public CreateFirstBoardPage ( IWebDriver webDriver ) : base(webDriver)
             {
@@ -16,7 +16,7 @@ namespace UIAtomationFramework.PageObjects
         public string GetWelcomeText
             {
 
-            get { return FindElement(welcomeToTrello).Text; }
+            get { return FindElement(welcomeToTrelloText).Text; }
 
             }
 

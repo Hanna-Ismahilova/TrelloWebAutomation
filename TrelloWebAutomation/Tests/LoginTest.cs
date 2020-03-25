@@ -32,7 +32,7 @@ namespace TrelloWebAutomation.Tests
         //TODO: negative test cases
 
         [Test, Retry(3)]
-        public void Login()
+        public void Trello_1_Login()
         {
 
             LoginPage login = new LoginPage(webDriver);
