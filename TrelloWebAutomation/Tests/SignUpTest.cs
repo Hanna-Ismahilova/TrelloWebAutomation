@@ -39,7 +39,10 @@ namespace TrelloWebAutomation.Tests
                 signUpData.SignUpFullName,SignUpDataBogus.signUpData.SignUpCreatePassword);
 
             HomePage homePage = new HomePage();
-            .Should().
+            homePage.GetPersonalBoardsText
+                .Should().Contain("");
+
+            
 
 
 
