@@ -35,10 +35,11 @@ namespace TrelloWebAutomation.Tests
         public void Trello_9_SignUp_in_Trello ( )
             {
             SignUpPage signUp = new SignUpPage(webDriver);
-            signUp.SignUpInTrello();
+            signUp.SignUpInTrello(SignUpDataBogus.signUpData.SignUpEmail, SignUpDataBogus.
+                signUpData.SignUpFullName,SignUpDataBogus.signUpData.SignUpCreatePassword);
 
-            HomePage homePage = new HomePage(webDriver);
-            homePage.
+            HomePage homePage = new HomePage();
+            .Should().
 
 
 
