@@ -39,11 +39,13 @@ namespace TrelloWebAutomation.Tests
             login.LoginToTrello(AppConfig.appSettings.Login, AppConfig.appSettings.Password);
 
             CreateFirstBoardPage welcome = new CreateFirstBoardPage(webDriver);
-            Assert.AreEqual("Welcome to Trello!", welcome.GetWelcomeText);
+            welcome.GetWelcomeText
+                .Should().Contain("Welcome to Trello!");
 
             }
 
-        [Test]
+        [Test, Retry(2)]
+        [System.Obsolete]
         public void Trello_6_LoginToTrello_Validation ( )
             {
             LoginPage login = new LoginPage(webDriver);
@@ -53,14 +55,18 @@ namespace TrelloWebAutomation.Tests
             login.GetEmailValidationErrorMessage
                 .Should().Contain("Missing email");
 
-            login.LoginToTrello(AppConfig.appSettings.Login, "");
-            login.GetPwdValidationErrorMessage
-                .Should().Contain("Invalid password");
+            //login.LoginToTrello(AppConfig.appSettings.Login, "");
+            //login.GetPwdValidationErrorMessage 
+            //    .Should().Contain("Invalid password");
 
-            login.LoginToTrello(AppConfig.appSettings.Login, "");
+            login.LoginToTrello("hismahilova+3@gmail.com", "test5A12!");
+            login.GetNotExistingAccountValidationErrorMessage
+                .Should().Contain("There isn't an account for this email");
+
+            login.LoginToTrello("hi.infoshare@gmail.com", "");
             login.GetTooManyPasswordAttemptsValidationErrorMessage()
                 .Should().Contain("Too many incorrect password attempts.");
-            
+
 
             }
 

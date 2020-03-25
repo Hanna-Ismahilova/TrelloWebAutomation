@@ -1,9 +1,11 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Net.Mime;
 using System.Text;
+using System.Threading;
 using UIAtomationFramework.Base;
 using UIAtomationFramework.Base.Elements;
 using UIAtomationFramework.Base.Models;
@@ -23,15 +25,12 @@ namespace UIAtomationFramework.PageObjects
         private By logInButtonOnLoginPage = By.CssSelector("input#login");
         private By loginButtonOnLoginPageForValidation = By.XPath("//input[@id='login']");
 
-        private readonly By missingEmail = By.CssSelector("div#error > .error-message");
-        private readonly By missingPassword = By.CssSelector("div#error > .error-message");
+        private readonly By missingEmailPassword = By.CssSelector("div#error > .error-message");
+        private readonly By accountNotExist = By.XPath("//div[@id='error']/p[@class='error-message']");
         private readonly By tooManyIncorrectPwdAttempts = By.XPath("//div[@id='error']/p[@class='error-message']");
         
 
-
-
-
-
+                     
         public LoginPage ( IWebDriver webDriver ) : base(webDriver)
             {
             }
@@ -59,35 +58,58 @@ namespace UIAtomationFramework.PageObjects
 
         public string GetEmailValidationErrorMessage 
             {
-
-            get { return FindElement(missingEmail).Text; }
+            
+            get {
+                Thread.Sleep(1500); 
+                return FindElement(missingEmailPassword).Text; }
 
             }
 
+        [Obsolete]
         public string GetPwdValidationErrorMessage
             {
-            get { return FindElement(missingPassword).Text; }
+            get
+                {
+                var wait = new WebDriverWait(_webDriver, TimeSpan.FromSeconds(3000));
+                wait.Until(ExpectedConditions.InvisibilityOfElementLocated(tooManyIncorrectPwdAttempts));
+                return FindElement(missingEmailPassword).Text;
+                }
+
+            }
+        
+
+        public string GetNotExistingAccountValidationErrorMessage
+            {
+            get
+                {
+                Thread.Sleep(1500);
+                SafeClick(loginButtonOnLoginPageForValidation);
+
+                return FindElement(accountNotExist).Text; }
             }
 
         public string  GetTooManyPasswordAttemptsValidationErrorMessage ( )
             {
-            var errorMessage = "Too many incorrect password attempts.";
             do
                 {
+                Thread.Sleep(1500);
+
                 SafeClick(loginButtonOnLoginPageForValidation);
 
                 } while ( tooManyIncorrectPwdAttempts == null );
 
-            return errorMessage;
-            
+            return FindElement(tooManyIncorrectPwdAttempts).Text;
+
+            //TODO add timeout > stopwatch instead of Thread.Sleep(1500);
 
             }
 
         //Create method which will check if 'Too many incorrect password attempts. You can try again in 300 seconds' is displayed and will check
         // till it disappears and then will click 'login' button again and will check if Invalid password error message appears.
-      
+
 
 
 
         }
     }
+
