@@ -11,10 +11,7 @@ namespace UIAtomationFramework.PageObjects
 
         private readonly By homePagePersonalBoardsText = By.XPath("/html//div[@id='content']/div[@class='member-boards-view']/div[@class='js-boards-page']/div[@class='js-react-root']//div[@class='home-container']//h3[@class='boards-page-board-section-header-name']");
 
-        public HomePage ( )
-            {
-            }
-
+   
         public HomePage ( IWebDriver webDriver ) : base(webDriver)
             {
 
