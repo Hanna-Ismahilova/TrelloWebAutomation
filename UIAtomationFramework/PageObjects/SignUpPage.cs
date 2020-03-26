@@ -30,14 +30,18 @@ namespace UIAtomationFramework.PageObjects
             SafeClick(signUpButtonOnwelcomePage);
 
             var emailSignup = FindElement(enterEmailSignUpInput);
-            emailSignup.SendKeys(SignUpDataBogus.signUpData.SignUpEmail);
+            string email = new Bogus.DataSets.Internet("en_GB").Email();
+            emailSignup.SendKeys(email);
 
             SafeClick(signUpContinueButton);
 
             var fullNameSignUp = FindElement(enterFullNameSignUpInput);
-            fullNameSignUp.SendKeys(SignUpDataBogus.signUpData.SignUpFullName);
+            string fullName = new Bogus.DataSets.Name("en_GB").FullName();
+            fullNameSignUp.SendKeys(fullName);
+
             var passwordSignUp = FindElement(createPasswordSignUpInput);
-            passwordSignUp.SendKeys(SignUpDataBogus.signUpData.SignUpCreatePassword);
+            string pwd = new Bogus.DataSets.Internet("en_GB").Password();
+            passwordSignUp.SendKeys(pwd);
 
             SafeClick(signUpButton);
 
@@ -45,7 +49,7 @@ namespace UIAtomationFramework.PageObjects
 
 
             }
+   
 
-                          
         }
     }

@@ -22,4 +22,3 @@ C:\Users\Hanna_Ismahilova\Documents\MY_PROJECTS\TrelloWebAutomation\UIAtomationF
 C:\Users\Hanna_Ismahilova\Documents\MY_PROJECTS\TrelloWebAutomation\UIAtomationFramework\obj\Debug\netcoreapp2.2\UIAtomationFramework.AssemblyInfo.cs
 C:\Users\Hanna_Ismahilova\Documents\MY_PROJECTS\TrelloWebAutomation\UIAtomationFramework\obj\Debug\netcoreapp2.2\UIAtomationFramework.dll
 C:\Users\Hanna_Ismahilova\Documents\MY_PROJECTS\TrelloWebAutomation\UIAtomationFramework\obj\Debug\netcoreapp2.2\UIAtomationFramework.pdb
-C:\Users\Hanna_Ismahilova\Documents\MY_PROJECTS\TrelloWebAutomation\UIAtomationFramework\obj\Debug\netcoreapp2.2\UIAtomationFramework.csprojAssemblyReference.cache

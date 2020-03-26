@@ -36,24 +36,14 @@ namespace TrelloWebAutomation.Tests
         public void Trello_9_SignUp_in_Trello ( )
             {
             SignUpPage signUp = new SignUpPage(webDriver);
-            signUp.SignUpInTrello(SignUpEmail, S);
+            signUp.SignUpInTrello();
 
             HomePage homePage = new HomePage(webDriver);
             homePage.GetPersonalBoardsText
                 .Should().Contain("Personal Boards");
-
-            
-
-
-
-
-
+        //TODO capture support
+                                                         
             }
-
-
-
-
-
-
+                              
         }
     }
