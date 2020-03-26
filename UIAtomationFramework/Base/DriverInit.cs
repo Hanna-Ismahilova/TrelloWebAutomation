@@ -40,7 +40,7 @@ namespace UIAtomationFramework.Base
 
         public void WebDriverStop()
         {
-            _webDriver.Close();
+            _webDriver.Dispose();
         }
       
     }

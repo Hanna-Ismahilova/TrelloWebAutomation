@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.0": {
+      "Bogus/29.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Bogus.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Bogus.dll": {}
+        }
+      },
       "elmah.corelibrary/1.2.2": {
         "type": "package",
         "compile": {
@@ -11,16 +20,16 @@
           "lib/Elmah.dll": {}
         }
       },
-      "FluentAssertions/5.9.0": {
+      "FluentAssertions/5.10.3": {
         "type": "package",
         "dependencies": {
           "System.Configuration.ConfigurationManager": "4.4.0"
         },
         "compile": {
-          "lib/netcoreapp2.0/FluentAssertions.dll": {}
+          "lib/netcoreapp2.1/FluentAssertions.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.0/FluentAssertions.dll": {}
+          "lib/netcoreapp2.1/FluentAssertions.dll": {}
         }
       },
       "Microsoft.Bcl/1.1.9": {
@@ -1566,6 +1575,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
+          "Bogus": "29.0.1",
+          "FluentAssertions": "5.10.3",
           "Microsoft.NET.Test.Sdk": "15.9.0",
           "NUnit3TestAdapter": "3.11.0",
           "Selenium.Support": "3.141.0",
@@ -1584,6 +1595,23 @@
     }
   },
   "libraries": {
+    "Bogus/29.0.1": {
+      "sha512": "gpNhpnv2K1f06Dhx+ky5YP649aViUgVDPbr48hgr8Jtilg8Oylx/kFeUKMnqw8tPROOmJEbSXob2WSYwqXeqZg==",
+      "type": "package",
+      "path": "bogus/29.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bogus.29.0.1.nupkg.sha512",
+        "bogus.nuspec",
+        "lib/net40/Bogus.dll",
+        "lib/net40/Bogus.xml",
+        "lib/netstandard1.3/Bogus.dll",
+        "lib/netstandard1.3/Bogus.xml",
+        "lib/netstandard2.0/Bogus.dll",
+        "lib/netstandard2.0/Bogus.xml"
+      ]
+    },
     "elmah.corelibrary/1.2.2": {
       "sha512": "OEx4ds9r2bw2/45VZwfw11lLv4y+mC2FUZxp7LsjmauFxj92K1kx8hafSBvls+V9s0WH0wv84B1LfWN/EaGfkg==",
       "type": "package",
@@ -1596,14 +1624,15 @@
         "lib/Elmah.dll"
       ]
     },
-    "FluentAssertions/5.9.0": {
-      "sha512": "JZxb5DuspmuH4A5p9bfj060evQnwIUkxxfFMG9F/pa7gl1Ry2r2nuQbu5G4UWGQQTtpTxPpVowqNDdBkA0G2Mw==",
+    "FluentAssertions/5.10.3": {
+      "sha512": "gVPEVp1hLVqcv+7Q2wiDf7kqCNn7+bQcQ0jbJ2mcRT6CeRoZl1tNkqvzSIhvekyldDptk77j1b03MXTTRIqqpg==",
       "type": "package",
-      "path": "fluentassertions/5.9.0",
+      "path": "fluentassertions/5.10.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fluentassertions.5.9.0.nupkg.sha512",
+        "FluentAssertions.png",
+        "fluentassertions.5.10.3.nupkg.sha512",
         "fluentassertions.nuspec",
         "lib/net45/FluentAssertions.dll",
         "lib/net45/FluentAssertions.pdb",
@@ -1614,6 +1643,9 @@
         "lib/netcoreapp2.0/FluentAssertions.dll",
         "lib/netcoreapp2.0/FluentAssertions.pdb",
         "lib/netcoreapp2.0/FluentAssertions.xml",
+        "lib/netcoreapp2.1/FluentAssertions.dll",
+        "lib/netcoreapp2.1/FluentAssertions.pdb",
+        "lib/netcoreapp2.1/FluentAssertions.xml",
         "lib/netstandard1.3/FluentAssertions.dll",
         "lib/netstandard1.3/FluentAssertions.pdb",
         "lib/netstandard1.3/FluentAssertions.xml",
@@ -1622,7 +1654,10 @@
         "lib/netstandard1.6/FluentAssertions.xml",
         "lib/netstandard2.0/FluentAssertions.dll",
         "lib/netstandard2.0/FluentAssertions.pdb",
-        "lib/netstandard2.0/FluentAssertions.xml"
+        "lib/netstandard2.0/FluentAssertions.xml",
+        "lib/netstandard2.1/FluentAssertions.dll",
+        "lib/netstandard2.1/FluentAssertions.pdb",
+        "lib/netstandard2.1/FluentAssertions.xml"
       ]
     },
     "Microsoft.Bcl/1.1.9": {
@@ -5696,7 +5731,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
-      "FluentAssertions >= 5.9.0",
+      "Bogus >= 29.0.1",
+      "FluentAssertions >= 5.10.3",
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "NUnit3TestAdapter >= 3.11.0",
       "Selenium.WebDriver >= 3.141.0",
@@ -5751,9 +5787,13 @@
     "frameworks": {
       "netcoreapp3.0": {
         "dependencies": {
+          "Bogus": {
+            "target": "Package",
+            "version": "[29.0.1, )"
+          },
           "FluentAssertions": {
             "target": "Package",
-            "version": "[5.9.0, )"
+            "version": "[5.10.3, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",

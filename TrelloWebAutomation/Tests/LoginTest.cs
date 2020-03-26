@@ -56,7 +56,7 @@ namespace TrelloWebAutomation.Tests
                 .Should().Contain("Missing email");
 
             //login.LoginToTrello(AppConfig.appSettings.Login, "");
-            //login.GetPwdValidationErrorMessage 
+            //login.GetPwdValidationErrorMessage
             //    .Should().Contain("Invalid password");
 
             login.LoginToTrello("hismahilova+3@gmail.com", "test5A12!");
