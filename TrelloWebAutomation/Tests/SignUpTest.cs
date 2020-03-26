@@ -7,6 +7,7 @@ using System.Text;
 using UIAtomationFramework.Base;
 using UIAtomationFramework.Helpers;
 using UIAtomationFramework.PageObjects;
+using FluentAssertions;
 
 namespace TrelloWebAutomation.Tests
     {
@@ -35,12 +36,11 @@ namespace TrelloWebAutomation.Tests
         public void Trello_9_SignUp_in_Trello ( )
             {
             SignUpPage signUp = new SignUpPage(webDriver);
-            signUp.SignUpInTrello(SignUpDataBogus.signUpData.SignUpEmail, SignUpDataBogus.
-                signUpData.SignUpFullName,SignUpDataBogus.signUpData.SignUpCreatePassword);
+            signUp.SignUpInTrello(SignUpEmail, S);
 
-            HomePage homePage = new HomePage();
+            HomePage homePage = new HomePage(webDriver);
             homePage.GetPersonalBoardsText
-                .Should().Contain("");
+                .Should().Contain("Personal Boards");
 
             
 

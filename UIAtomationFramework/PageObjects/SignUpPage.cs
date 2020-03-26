@@ -23,7 +23,7 @@ namespace UIAtomationFramework.PageObjects
 
             }
 
-        public void SignUpInTrello (string email, string fullName, string pwd)
+        public void SignUpInTrello ()
             {
             _webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 

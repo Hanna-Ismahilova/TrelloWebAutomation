@@ -20,6 +20,6 @@ namespace UIAtomationFramework.Extensions
         //var padding = r.String2(r.Number(2, 6));
 
         //    return new string(r.Shuffle(number + letter + lowerLetter + symbol + padding).ToArray());
-        }
+        //}
         }
     }
