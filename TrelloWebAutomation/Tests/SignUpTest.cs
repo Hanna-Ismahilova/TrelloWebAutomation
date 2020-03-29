@@ -36,6 +36,8 @@ namespace TrelloWebAutomation.Tests
         public void Trello_9_SignUp_in_Trello ( )
             {
             SignUpPage signUp = new SignUpPage(webDriver);
+            // var person = new Person("en-En");
+            // singUp.SingUpInTrello(person);
             signUp.SignUpInTrello();
 
             HomePage homePage = new HomePage(webDriver);
