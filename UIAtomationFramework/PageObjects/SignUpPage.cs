@@ -12,6 +12,8 @@ namespace UIAtomationFramework.PageObjects
         {
 
         private By signUpButtonOnwelcomePage = By.XPath("//body//nav[@class='navbar py-3']//a[@href='/signup']");
+        //private By enterDataToFieldById(string inputName)=> By.ById(inputName);
+        //var emailObj = FindElement(enterDataToField("email"));
         private By enterEmailSignUpInput = By.XPath("/html//input[@id='email']");
         private By signUpContinueButton = By.XPath("/html//input[@id='signup-submit']");
         private By enterFullNameSignUpInput = By.XPath("/html//input[@id='displayName']");
