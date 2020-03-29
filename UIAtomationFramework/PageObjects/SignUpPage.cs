@@ -25,26 +25,27 @@ namespace UIAtomationFramework.PageObjects
 
         public void SignUpInTrello ()
             {
+            //to remove after refactoring method FindElement
             _webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-
             SafeClick(signUpButtonOnwelcomePage);
-
             var emailSignup = FindElement(enterEmailSignUpInput);
             string email = new Bogus.DataSets.Internet("en_GB").Email();
+            //emailSignup.SendKeys(person.Email);
             emailSignup.SendKeys(email);
 
             SafeClick(signUpContinueButton);
 
             var fullNameSignUp = FindElement(enterFullNameSignUpInput);
             string fullName = new Bogus.DataSets.Name("en_GB").FullName();
+             //fullNameSignUp.SendKeys(person.FullName);
             fullNameSignUp.SendKeys(fullName);
-
             var passwordSignUp = FindElement(createPasswordSignUpInput);
             string pwd = new Bogus.DataSets.Internet("en_GB").Password();
+            //passwordSignUp.SendKeys(person.Password);
             passwordSignUp.SendKeys(pwd);
 
             SafeClick(signUpButton);
-
+            //to remove after refactoring method FindElement
             _webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
 
