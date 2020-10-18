@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace UIAtomationFramework.Base.Models
-    {
+﻿namespace UIAtomationFramework.Base.Models
+{
     public class AppSettingsModel
         {
 

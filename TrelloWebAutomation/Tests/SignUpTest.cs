@@ -36,6 +36,9 @@ namespace TrelloWebAutomation.Tests
         public void Trello_9_SignUp_in_Trello ( )
             {
             SignUpPage signUp = new SignUpPage(webDriver);
+
+            string fullName = new Bogus.DataSets.Name().FullName();
+
             // var person = new Person("en-En");
             // singUp.SingUpInTrello(person);
             signUp.SignUpInTrello();

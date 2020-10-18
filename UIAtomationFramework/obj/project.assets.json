@@ -5920,21 +5920,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hanna_Ismahilova\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Hanna_Ismahilova\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hanna_Ismahilova\\Documents\\MY_PROJECTS\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj",
+      "projectUniqueName": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj",
       "projectName": "UIAtomationFramework",
-      "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\MY_PROJECTS\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj",
+      "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj",
       "packagesPath": "C:\\Users\\Hanna_Ismahilova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\MY_PROJECTS\\TrelloWebAutomation\\UIAtomationFramework\\obj\\",
+      "outputPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\UIAtomationFramework\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\Hanna_Ismahilova\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -6013,7 +6009,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   },

@@ -23,3 +23,17 @@ C:\Users\Hanna_Ismahilova\Documents\MY_PROJECTS\TrelloWebAutomation\UIAtomationF
 C:\Users\Hanna_Ismahilova\Documents\MY_PROJECTS\TrelloWebAutomation\UIAtomationFramework\obj\Debug\netcoreapp2.2\UIAtomationFramework.dll
 C:\Users\Hanna_Ismahilova\Documents\MY_PROJECTS\TrelloWebAutomation\UIAtomationFramework\obj\Debug\netcoreapp2.2\UIAtomationFramework.pdb
 C:\Users\Hanna_Ismahilova\Documents\MY_PROJECTS\TrelloWebAutomation\UIAtomationFramework\obj\Debug\netcoreapp2.2\UIAtomationFramework.csprojAssemblyReference.cache
+C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\UIAtomationFramework\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\UIAtomationFramework\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\UIAtomationFramework\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\UIAtomationFramework\bin\Debug\netcoreapp2.2\UIAtomationFramework.deps.json
+C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\UIAtomationFramework\bin\Debug\netcoreapp2.2\UIAtomationFramework.runtimeconfig.json
+C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\UIAtomationFramework\bin\Debug\netcoreapp2.2\UIAtomationFramework.runtimeconfig.dev.json
+C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\UIAtomationFramework\bin\Debug\netcoreapp2.2\UIAtomationFramework.dll
+C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\UIAtomationFramework\bin\Debug\netcoreapp2.2\UIAtomationFramework.pdb
+C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\UIAtomationFramework\obj\Debug\netcoreapp2.2\UIAtomationFramework.AssemblyInfoInputs.cache
+C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\UIAtomationFramework\obj\Debug\netcoreapp2.2\UIAtomationFramework.AssemblyInfo.cs
+C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\UIAtomationFramework\obj\Debug\netcoreapp2.2\UIAtomationFramework.csproj.CoreCompileInputs.cache
+C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\UIAtomationFramework\obj\Debug\netcoreapp2.2\UIAtomationFramework.dll
+C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\UIAtomationFramework\obj\Debug\netcoreapp2.2\UIAtomationFramework.pdb
+C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\UIAtomationFramework\obj\Debug\netcoreapp2.2\UIAtomationFramework.genruntimeconfig.cache
