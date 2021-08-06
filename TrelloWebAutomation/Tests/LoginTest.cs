@@ -1,12 +1,11 @@
-﻿using System;
-using FluentAssertions;
+﻿using FluentAssertions;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using UIAtomationFramework.Base;
-using UIAtomationFramework.Base.Models;
-using UIAtomationFramework.Helpers;
-using UIAtomationFramework.PageObjects;
+using OpenQA.Selenium.Support.UI;
+using System;
+using UITrelloAutomationFramework.Base;
+using UITrelloAutomationFramework.Helpers;
+using UITrelloAutomationFramework.PageObjects;
 
 namespace TrelloWebAutomation.Tests
 {
@@ -35,48 +34,52 @@ namespace TrelloWebAutomation.Tests
         [Test, Retry(3)]
         public void Trello_1_LoginToTrello_FirstTime ( )
             {
-            LoginPage login = new LoginPage(webDriver);
+            LoginPage login = new(webDriver);
             login.GoToLoginPage();
-            login.LoginToTrello(AppConfig.appSettings.Login, AppConfig.appSettings.Password);
+            login.EnterUserEmailToLoginToTrello(AppConfig.appSettings.Login);
+            login.LoginWithAttlassian();
+            login.EnterPasswordToLoginToTrello(AppConfig.appSettings.Password);
+            login.Login();
 
-            CreateFirstBoardPage welcome = new CreateFirstBoardPage(webDriver);
+            HomePage welcome = new(webDriver);
             welcome.GetWelcomeText
-                .Should().Contain("Welcome to Trello!");
+                .Should().Contain("Most popular templates");
 
             }
 
-        [Test, Retry(2)]
-        [System.Obsolete]
-        public void Trello_6_LoginToTrello_Validation ( )
-            {
+        //[Test, Retry(2)]
+        //[System.Obsolete]
+        //public void Trello_6_LoginToTrello_Validation ( )
+        //    {
+        //    WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(10));
+        //    LoginPage login = new LoginPage(webDriver);
+        //    //Missing email
+        //    login.GoToLoginPage();
+        //    login.EnterCredsToLoginToTrello("", "");
+        //    wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("div#error > .error-message")));
+        //    login.GetEmailValidationErrorMessage
+        //        .Should().Contain("Missing email");
 
-            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+        //    //Invalid pwd
+        //    login.EnterCredsToLoginToTrello(AppConfig.appSettings.Login, "");
+        //    wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("div#error > .error-message")));
+        //    login.GetPwdValidationErrorMessage
+        //        .Should().Contain("Invalid password");
 
-            LoginPage login = new LoginPage(webDriver);
+        //    //Account for the email does not exist
+        //    login.EnterCredsToLoginToTrello("hismahilova+3@gmail.com", "test5A12!");
+        //    wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//div[@id='error']/p[@class='error-message']")));
+        //    login.GetNotExistingAccountValidationErrorMessage
+        //        .Should().Contain("There isn't an account for this email");
 
-            //Missing email
-            login.GoToLoginPage();
-            login.LoginToTrello("", "");
-            login.GetEmailValidationErrorMessage
-                .Should().Contain("Missing email");
-
-            //Invalid pwd
-            login.LoginToTrello(AppConfig.appSettings.Login, "");
-            login.GetPwdValidationErrorMessage
-                .Should().Contain("Invalid password");
-
-            //Account for the email does not exist
-            login.LoginToTrello("hismahilova+3@gmail.com", "test5A12!");
-            login.GetNotExistingAccountValidationErrorMessage
-                .Should().Contain("There isn't an account for this email");
-
-            //Too many incorrect pwd attempts
-            login.LoginToTrello("hi.infoshare@gmail.com", "");
-            login.GetTooManyPasswordAttemptsValidationErrorMessage()
-                .Should().Contain("Too many incorrect password attempts.");
+        //    //Too many incorrect pwd attempts
+        //    login.EnterCredsToLoginToTrello("hi.infoshare@gmail.com", "");
+        //    login.WaitForTooManyIncorrectPwdAttemptsError();
+        //    login.GetTooManyPasswordAttemptsValidationErrorMessage()
+        //        .Should().Contain("Too many incorrect password attempts.");
 
 
-            }
+        //    }
 
         }
 }

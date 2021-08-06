@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrelloWebAutomation", "TrelloWebAutomation\TrelloWebAutomation.csproj", "{824609C6-1ADA-47BD-87FD-048C1DFA7F87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrelloWebAutomation", "TrelloWebAutomation\TrelloWebAutomation.csproj", "{824609C6-1ADA-47BD-87FD-048C1DFA7F87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAtomationFramework", "UIAtomationFramework\UIAtomationFramework.csproj", "{2EE0E1D0-A3E5-4721-8976-5011FF78ACC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UITrelloAutomationFramework", "ClassLibrary1\UITrelloAutomationFramework.csproj", "{6C4D6D2B-1498-4434-9000-32B83B44B38E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{824609C6-1ADA-47BD-87FD-048C1DFA7F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{824609C6-1ADA-47BD-87FD-048C1DFA7F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{824609C6-1ADA-47BD-87FD-048C1DFA7F87}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2EE0E1D0-A3E5-4721-8976-5011FF78ACC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2EE0E1D0-A3E5-4721-8976-5011FF78ACC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2EE0E1D0-A3E5-4721-8976-5011FF78ACC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2EE0E1D0-A3E5-4721-8976-5011FF78ACC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4D6D2B-1498-4434-9000-32B83B44B38E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4D6D2B-1498-4434-9000-32B83B44B38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4D6D2B-1498-4434-9000-32B83B44B38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4D6D2B-1498-4434-9000-32B83B44B38E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -663,18 +663,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Selenium.Support/3.141.0": {
-        "type": "package",
-        "dependencies": {
-          "Selenium.WebDriver": "3.141.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/WebDriver.Support.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/WebDriver.Support.dll": {}
-        }
-      },
       "Selenium.WebDriver/3.141.0": {
         "type": "package",
         "dependencies": {
@@ -1639,24 +1627,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
-        }
-      },
-      "UIAtomationFramework/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
-        "dependencies": {
-          "Microsoft.NET.Test.Sdk": "15.9.0",
-          "NUnit3TestAdapter": "3.11.0",
-          "Selenium.Support": "3.141.0",
-          "Selenium.WebDriver": "3.141.0",
-          "Selenium.WebDriver.ChromeDriver": "77.0.3865.4000",
-          "nunit": "3.11.0"
-        },
-        "compile": {
-          "bin/placeholder/UIAtomationFramework.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/UIAtomationFramework.dll": {}
         }
       }
     }
@@ -2662,25 +2632,6 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.4.3.0.nupkg.sha512",
         "runtime.native.system.nuspec"
-      ]
-    },
-    "Selenium.Support/3.141.0": {
-      "sha512": "F4sxMCXGyqWtbw5qsniJRgza2UsBnslHwFgNA2p7hPxvJhqg73lyXu/ZscJ7FSfRvq3eJrosysv92+4sZ3vWsg==",
-      "type": "package",
-      "path": "selenium.support/3.141.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net35/WebDriver.Support.dll",
-        "lib/net35/WebDriver.Support.xml",
-        "lib/net40/WebDriver.Support.dll",
-        "lib/net40/WebDriver.Support.xml",
-        "lib/net45/WebDriver.Support.dll",
-        "lib/net45/WebDriver.Support.xml",
-        "lib/netstandard2.0/WebDriver.Support.dll",
-        "lib/netstandard2.0/WebDriver.Support.xml",
-        "selenium.support.3.141.0.nupkg.sha512",
-        "selenium.support.nuspec"
       ]
     },
     "Selenium.WebDriver/3.141.0": {
@@ -5737,40 +5688,31 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
-    },
-    "UIAtomationFramework/1.0.0": {
-      "type": "project",
-      "path": "../UIAtomationFramework/UIAtomationFramework.csproj",
-      "msbuildProject": "../UIAtomationFramework/UIAtomationFramework.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\UIAtomationFramework\\UIAtomationFramework.csproj",
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "NUnit3TestAdapter >= 3.11.0",
       "Selenium.WebDriver >= 3.141.0",
       "Selenium.WebDriver.ChromeDriver >= 77.0.3865.4000",
-      "UIAtomationFramework >= 1.0.0",
       "nunit >= 3.11.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hanna_Ismahilova\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Hanna_Ismahilova\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\TrelloWebAutomation\\TrelloWebAutomation.csproj",
+      "projectUniqueName": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation.csproj",
       "projectName": "TrelloWebAutomation",
-      "projectPath": "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\TrelloWebAutomation\\TrelloWebAutomation.csproj",
+      "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation.csproj",
       "packagesPath": "C:\\Users\\Hanna_Ismahilova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\TrelloWebAutomation\\obj\\",
+      "outputPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\Hanna_Ismahilova\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -5784,9 +5726,10 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
           "projectReferences": {
-            "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj": {
-              "projectPath": "C:\\Users\\Hanna_Ismahilova\\source\\repos\\TrelloWebAutomation\\UIAtomationFramework\\UIAtomationFramework.csproj"
+            "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\UIAtomationFramework\\UIAtomationFramework.csproj": {
+              "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\UIAtomationFramework\\UIAtomationFramework.csproj"
             }
           }
         }
@@ -5799,6 +5742,7 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
+        "targetAlias": "netcoreapp2.2",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -5837,8 +5781,19 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\UIAtomationFramework\\UIAtomationFramework.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\UIAtomationFramework\\UIAtomationFramework.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    }
+  ]
 }
