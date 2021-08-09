@@ -32,7 +32,7 @@ namespace TrelloWebAutomation.Tests
 
 
         [Test, Retry(3)]
-        public void Trello_1_LoginToTrello_FirstTime ( )
+        public void LoginToTrello_FirstTime ( )
             {
             LoginPage login = new(webDriver);
             login.GoToLoginPage();
@@ -49,7 +49,7 @@ namespace TrelloWebAutomation.Tests
         }
 
         [Test, Retry(2)]
-        public void Trello_6_LoginToTrello_ValidateMissingEmail()
+        public void LoginToTrello_ValidateMissingEmail()
         {
             LoginPage login = new(webDriver);
             login.GoToLoginPage();
@@ -62,7 +62,7 @@ namespace TrelloWebAutomation.Tests
         }
 
         [Test, Retry(2)]
-        public void Trello_6_LoginToTrello_ValidateInvalidPwd()
+        public void LoginToTrello_ValidateInvalidPwd()
         {
             LoginPage login = new(webDriver);
             login.GoToLoginPage();
@@ -79,7 +79,7 @@ namespace TrelloWebAutomation.Tests
         }
 
         [Test, Retry(2)]
-        public void Trello_6_LoginToTrello_ValidateAccountNotExists()
+        public void LoginToTrello_ValidateAccountNotExists()
         {
             LoginPage login = new(webDriver);
             login.GoToLoginPage();
@@ -92,7 +92,7 @@ namespace TrelloWebAutomation.Tests
         }
 
         //[Test, Retry(2)]
-        //public void Trello_6_LoginToTrello_ValidateTooManyPwdAttempts()
+        //public void LoginToTrello_ValidateTooManyPwdAttempts()
         //{
         //    LoginPage login = new(webDriver);
         //    login.GoToLoginPage();

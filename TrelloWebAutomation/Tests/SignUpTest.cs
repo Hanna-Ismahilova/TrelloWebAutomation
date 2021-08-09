@@ -29,7 +29,7 @@ namespace TrelloWebAutomation.Tests
         }
 
         [Test, Retry(3)]
-        public void Trello_1_SignUp_in_Trello()
+        public void SignUp_in_Trello()
         {
 
             //Cannot be done because of CAPTCHA
@@ -46,7 +46,7 @@ namespace TrelloWebAutomation.Tests
         }
 
         [Test, Retry(3)]
-        public void Trello_2_SignUp_in_Trello_via_Google_Acct()
+        public void SignUp_in_Trello_via_Google_Acct()
         {
             SignUpPage signUpPage = new(webDriver);
             signUpPage.SignUpInTrelloViaGoogleAcct();
