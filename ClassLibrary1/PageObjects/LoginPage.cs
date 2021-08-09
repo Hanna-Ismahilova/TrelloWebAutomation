@@ -12,98 +12,68 @@ namespace UITrelloAutomationFramework.PageObjects
         private readonly By enterEmailInput = By.XPath("/html//input[@id='user']");
         private readonly By loginWithAtlassianButton = By.CssSelector("[value='Log in with Atlassian']");
         private readonly By loginWithLoginAfterEnterPwdButton = By.CssSelector("[value='Log in with Atlassian']");
-        private readonly By continueButton = By.CssSelector("button#login-submit  .css-t5emrf");
-        private readonly By enterPasswordInput = By.XPath("/html//input[@id='password']");
+        private readonly By loginToMakeValidationMsgDisplayedButton = By.Id("login");
+        //private readonly By continueButton = By.CssSelector("button#login-submit  .css-t5emrf");
+        private readonly By enterPasswordInput = By.XPath("//*[@id='password']");
         private readonly By logInButtonOnLoginPage = By.Id("login-submit");
         private readonly By loginButtonOnLoginPageForValidation = By.XPath("//input[@id='login']");
-
-        private readonly By missingEmailPassword = By.CssSelector("div#error > .error-message");
+        private readonly By missingEmail = By.CssSelector("div#error > .error-message");
+        private readonly By missingEmailPassword = By.Id("password-error");
         private readonly By accountNotExist = By.XPath("//div[@id='error']/p[@class='error-message']");
         private readonly By tooManyIncorrectPwdAttempts = By.XPath("//*[@id='error']/p");
 
-        private static readonly WebDriverWait wait = new WebDriverWait(driver: _webDriver, timeout: TimeSpan.FromSeconds(10));
-
-
+        private static readonly WebDriverWait wait = new(driver: _webDriver, timeout: TimeSpan.FromSeconds(10));
 
         public LoginPage(IWebDriver webDriver) : base(webDriver)
         {
         }
 
-        public void EnterUserEmailToLoginToTrello(string login )
+        public void EnterUserEmailToLoginToTrello(string login)
         {
             var email = FindElement(enterEmailInput);
             email.SendKeys(login);
-        
         }
         public void EnterPasswordToLoginToTrello(string pwd)
-        {
-        
+        {    
             var password = FindElement(enterPasswordInput);
             password.SendKeys(pwd);
         }
 
-        public void Login()
-        {
-            Click(logInButtonOnLoginPage);
-        }
+        #region ClickOnElement
+        public void LoginOnWelcomeNavBar() => Click(logInButtonOnLoginPage);
+        public void LoginWithAttlassian() => Click(loginWithAtlassianButton);
+        public void LoginWithButtonUnderPwdField() => Click(loginWithLoginAfterEnterPwdButton);
+        public void LoginToMakeValidationMsgDisplayed() => Click(loginToMakeValidationMsgDisplayedButton);
+        public void LoginButtonLoginPageForValidation() => Click(loginButtonOnLoginPageForValidation);
+        public void GoToLoginPage() => Click(logInButtonOnWelcomePage);
+        #endregion
 
-        public void LoginWithAttlassian()
-        {
-            Click(loginWithAtlassianButton);
-        } 
-        public void LoginWithButtonUnderPwdField()
-        {
-            Click(loginWithLoginAfterEnterPwdButton);
-        }
-        public void GoToLoginPage()
-        {
-            Click(logInButtonOnWelcomePage);
-        }
+        #region GetMessageText
+        public string GetEmailValidationErrorMessage => FindElement(missingEmail).Text;
+        public string GetPwdValidationErrorMessage => FindElement(missingEmailPassword).Text;
+        public string GetNotExistingAccountValidationErrorMessage => FindElement(accountNotExist).Text;
 
-        public string GetEmailValidationErrorMessage
-        {
-            get
-            {
-                return FindElement(missingEmailPassword).Text;
-            }
-        }
-
-        [Obsolete]
-        public string GetPwdValidationErrorMessage
-        {
-            get
-            {
-                return FindElement(missingEmailPassword).Text;
-            }
-        }
-
-        public string GetNotExistingAccountValidationErrorMessage
-        {
-            get
-            {
-                SafeClick(loginButtonOnLoginPageForValidation);
-
-                return FindElement(accountNotExist).Text;
-            }
-        }
-
-        public string GetTooManyPasswordAttemptsValidationErrorMessage()
+        public bool GetTooManyPasswordAttemptsValidationErrorMessage()
         {
             do
             {
-                SafeClick(loginButtonOnLoginPageForValidation);
-            }
-            while (tooManyIncorrectPwdAttempts == null);
+                LoginButtonLoginPageForValidation();
+                
+            } while (FindElement(tooManyIncorrectPwdAttempts) != null);
 
-            return FindElement(tooManyIncorrectPwdAttempts).Text;
+            return FindElement(tooManyIncorrectPwdAttempts).Displayed;
         }
+        #endregion
 
-        public string WaitForTooManyIncorrectPwdAttemptsError()
-        {
-            return wait.Until(d => d.FindElement(tooManyIncorrectPwdAttempts)).Text;
-        }
+        #region WaitForElement
+        public void WaitForLoginWithAtlassianButton() => wait.Until(d => d.FindElement(loginWithAtlassianButton));
+        public string WaitForTooManyIncorrectPwdAttemptsError() => wait.Until(d => d.FindElement(tooManyIncorrectPwdAttempts)).Text;
+        public void WaitUntilTooManyIncorrectPwdAttemptsErrorDisappear() => wait.Until(d => d.FindElement(tooManyIncorrectPwdAttempts));
+        public void WaitForEmailValidationErrorMessage() => wait.Until(d => d.FindElement(missingEmail));
+        public void WaitForPwdValidationErrorMessage() => wait.Until(d => d.FindElement(missingEmailPassword));
+        public void WaitForNotExistingAccountValidationErrorMessage() => wait.Until(d => d.FindElement(accountNotExist));
+        #endregion
 
-        public void WaitUntilTooManyIncorrectPwdAttemptsErrorDisappear() => wait.Until(ExpectedConditions.InvisibilityOfElementLocated(tooManyIncorrectPwdAttempts));
     }
 }
 

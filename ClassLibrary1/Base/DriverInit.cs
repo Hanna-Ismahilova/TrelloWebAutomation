@@ -32,7 +32,7 @@ namespace UITrelloAutomationFramework.Base
         }
         public void LoadPage()
         {
-            _webDriver.Url = AppConfig.appSettings.URL;
+            _webDriver.Url = AppConfig.appSettings.URLMain;
         }
 
         public void WebDriverStop()

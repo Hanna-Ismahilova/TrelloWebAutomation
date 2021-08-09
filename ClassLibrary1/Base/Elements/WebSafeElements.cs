@@ -131,21 +131,7 @@ namespace UITrelloAutomationFramework.Base.Elements
         }
 
         #region Helpers
-        private dynamic ReturnOrFail(object toCheck)
-        {
-            if (toCheck == null)
-            {
-                switch (_breakIfNotFound)
-                {
-                    case true:
-                        Assert.Fail($"{_failMessage} during {_timeout} seconds.Exception:{_failMessageException}");
-                        break;
-                    case false:
-                        return null;
-                }
-            }
-            return toCheck;
-        }
+
 
         public void Click()
         {

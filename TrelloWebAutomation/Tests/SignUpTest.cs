@@ -33,13 +33,13 @@ namespace TrelloWebAutomation.Tests
         {
 
             //Cannot be done because of CAPTCHA
-            SignUpPage signUp = new SignUpPage(webDriver);
+            SignUpPage signUp = new(webDriver);
 
-            string fullName = new Bogus.DataSets.Name().FullName();
+            _ = new Bogus.DataSets.Name().FullName();
 
             signUp.SignUpInTrello();
 
-            HomePage homePage = new HomePage(webDriver);
+            HomePage homePage = new(webDriver);
             homePage.GetPersonalBoardsText
                 .Should().Contain("Personal Boards");
 
@@ -48,7 +48,7 @@ namespace TrelloWebAutomation.Tests
         [Test, Retry(3)]
         public void Trello_2_SignUp_in_Trello_via_Google_Acct()
         {
-            SignUpPage signUpPage = new SignUpPage(webDriver);
+            SignUpPage signUpPage = new(webDriver);
             signUpPage.SignUpInTrelloViaGoogleAcct();
 
         }
