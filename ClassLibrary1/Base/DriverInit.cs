@@ -16,7 +16,7 @@ namespace UITrelloAutomationFramework.Base
 
         }
 
-        public IWebDriver WebDriverStart()
+        public static IWebDriver WebDriverStart()
         {
 
             switch (AppConfig.appSettings.Browser.ToLower())
@@ -30,12 +30,12 @@ namespace UITrelloAutomationFramework.Base
                     return null;
             }
         }
-        public void LoadPage()
+        public static void LoadPage()
         {
             _webDriver.Url = AppConfig.appSettings.URLMain;
         }
 
-        public void WebDriverStop()
+        public static void WebDriverStop()
         {
             _webDriver.Dispose();
         }
