@@ -30,7 +30,9 @@ namespace UITrelloAutomationFramework.PageObjects
 
         }
 
+        #region WaitForElement
+
         public void WaitForGetWelcomeText() => wait.Until(d => d.FindElement(welcomeToTrelloText));
-      
+        #endregion
     }
 }

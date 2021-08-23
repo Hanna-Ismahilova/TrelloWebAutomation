@@ -1,5 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
+using OpenQA.Selenium.Firefox;
 using UITrelloAutomationFramework.Helpers;
 
 namespace UITrelloAutomationFramework.Base
@@ -24,8 +26,12 @@ namespace UITrelloAutomationFramework.Base
                 case "chrome":
                     return _webDriver is null
                                     ? _webDriver = new ChromeDriver() : _webDriver;
-
-                //todo Firefox,IE itd
+                //case "firefox":
+                //    return _webDriver is null
+                //                    ? _webDriver = new FirefoxDriver() : _webDriver;
+                //case "edge":
+                //    return _webDriver is null
+                //                    ? _webDriver = new EdgeDriver() : _webDriver;
                 default:
                     return null;
             }

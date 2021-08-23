@@ -32,7 +32,7 @@ namespace TrelloWebAutomation.Tests
 
 
         [Test, Retry(3)]
-        public void LoginToTrello_FirstTime ( )
+        public void LoginToTrello_FirstTime_Success ( )
             {
             LoginPage login = new(webDriver);
             login.GoToLoginPage();
@@ -90,20 +90,6 @@ namespace TrelloWebAutomation.Tests
             login.GetNotExistingAccountValidationErrorMessage
                 .Should().Contain("There isn't an account for this email");
         }
-
-        //[Test, Retry(2)]
-        //public void LoginToTrello_ValidateTooManyPwdAttempts()
-        //{
-        //    LoginPage login = new(webDriver);
-        //    login.GoToLoginPage();
-
-        //    login.EnterUserEmailToLoginToTrello("hismahilova+3@gmail.com");
-        //    login.EnterPasswordToLoginToTrello("test");
-        //    login.LoginToMakeValidationMsgDisplayed();
-        //    login.WaitForTooManyIncorrectPwdAttemptsError();
-        //    login.GetTooManyPasswordAttemptsValidationErrorMessage()
-        //        .Should().BeTrue("Too many incorrect password attempts.");
-        //}
 
     }
 }
