@@ -7,6 +7,7 @@ namespace UITrelloAutomationFramework.PageObjects
 {
     public class LoginPage : BaseUIPage
     {
+        private static readonly WebDriverWait wait = new(driver: _webDriver, timeout: TimeSpan.FromSeconds(10));
 
         private readonly By logInButtonOnWelcomePage = (By.XPath("//body//nav[@class='navbar py-3']//a[@href='/login']"));
         private readonly By enterEmailInput = By.XPath("/html//input[@id='user']");
@@ -22,7 +23,6 @@ namespace UITrelloAutomationFramework.PageObjects
         private readonly By accountNotExist = By.XPath("//div[@id='error']/p[@class='error-message']");
         private readonly By tooManyIncorrectPwdAttempts = By.XPath("//*[@id='error']/p");
 
-        private static readonly WebDriverWait wait = new(driver: _webDriver, timeout: TimeSpan.FromSeconds(10));
 
         public LoginPage(IWebDriver webDriver) : base(webDriver)
         {

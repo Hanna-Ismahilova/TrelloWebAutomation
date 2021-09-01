@@ -9,6 +9,7 @@ namespace TrelloWebAutomation.Tests
 {
 
     [TestFixture]
+    [Category("Smoke: SignUp")]
     class SignUpTest : DriverInit
     {
         private IWebDriver webDriver;
@@ -48,8 +49,17 @@ namespace TrelloWebAutomation.Tests
         [Test, Retry(3)]
         public void SignUp_in_Trello_via_Google_Acct()
         {
+            //Cannot be done because of Trello protection
             SignUpPage signUpPage = new(webDriver);
-            signUpPage.SignUpInTrelloViaGoogleAcct();
+            signUpPage.ClickSignUpBtnOnWelcomePage();
+            signUpPage.ClickSignUpViaGoogleAcct();
+            signUpPage.WaitForEmailFieldWhenSignUpViaGoogleAcct();
+            signUpPage.EnterUserEmailToSignUpViaGoogleAcct(AppConfig.appSettings.Login);
+            signUpPage.ClickOnNextButton();
+            signUpPage.WaitForPasswordFieldWhenSignUpViaGoogleAcct();
+            signUpPage.EnterUserPasswordToSignUpViaGoogleAcct(AppConfig.appSettings.Password);
+            signUpPage.ClickOnNextButton();
+
 
         }
 
