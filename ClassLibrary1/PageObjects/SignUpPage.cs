@@ -50,6 +50,7 @@ namespace UITrelloAutomationFramework.PageObjects
 
         }
 
+        #region EnterData
         public void EnterUserEmailToSignUpViaGoogleAcct(string signUpViaGoogleAcct)
         {
             var email = FindElement(enterEmailFieldWhenSignUpViaGoogleAcct);
@@ -61,20 +62,14 @@ namespace UITrelloAutomationFramework.PageObjects
             var password = FindElement(enterEmailFieldWhenSignUpViaGoogleAcct);
             password.SendKeys(signUpViaGoogleAcct);
         }
+        #endregion
 
         #region ClickOnElement
         public void ClickSignUpBtnOnWelcomePage() => Click(signUpButtonOnwelcomePage);
         public void ClickSignUpViaGoogleAcct() => Click(viaGoogleAcctBtn);
         public void ClickUseAnotherAccount() => Click(useAnotherAccountBtn);
         public void ClickOnNextButton() => Click(nextBtn);
-
-
         #endregion
-
-
-        #region GetMessageText
-        #endregion
-
 
         #region WaitForElement
         public void WaitForEmailFieldWhenSignUpViaGoogleAcct() => wait.Until(d => d.FindElement(enterEmailFieldWhenSignUpViaGoogleAcct));
@@ -82,7 +77,5 @@ namespace UITrelloAutomationFramework.PageObjects
         public void WaitForUseAnotherAccountBtn() => wait.Until(d => d.FindElement(useAnotherAccountBtn));
 
         #endregion
-
-
     }
 }

@@ -10,6 +10,7 @@ namespace TrelloWebAutomation.Tests
 
     [TestFixture]
     [Category("Smoke: SignUp")]
+    [Ignore("Ignore a fixture")]
     class SignUpTest : DriverInit
     {
         private IWebDriver webDriver;

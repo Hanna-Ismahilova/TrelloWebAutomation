@@ -28,6 +28,7 @@ namespace UITrelloAutomationFramework.PageObjects
         {
         }
 
+        #region EnterData
         public void EnterUserEmailToLoginToTrello(string login)
         {
             var email = FindElement(enterEmailInput);
@@ -38,6 +39,8 @@ namespace UITrelloAutomationFramework.PageObjects
             var password = FindElement(enterPasswordInput);
             password.SendKeys(pwd);
         }
+
+        #endregion
 
         #region ClickOnElement
         public void LoginOnWelcomeNavBar() => Click(logInButtonOnLoginPage);
@@ -73,7 +76,6 @@ namespace UITrelloAutomationFramework.PageObjects
         public void WaitForPwdValidationErrorMessage() => wait.Until(d => d.FindElement(missingEmailPassword));
         public void WaitForNotExistingAccountValidationErrorMessage() => wait.Until(d => d.FindElement(accountNotExist));
         #endregion
-
     }
 }
 

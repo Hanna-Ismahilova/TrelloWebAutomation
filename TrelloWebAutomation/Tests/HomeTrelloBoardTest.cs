@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using FluentAssertions;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using UITrelloAutomationFramework.Base;
 using UITrelloAutomationFramework.Helpers;
@@ -6,6 +7,8 @@ using UITrelloAutomationFramework.PageObjects;
 
 namespace TrelloWebAutomation.Tests
 {
+    [TestFixture]
+    [Category("Smoke: Boards")]
     public class HomeTrelloBoardTest : DriverInit
     {
         private IWebDriver webDriver;
@@ -37,9 +40,14 @@ namespace TrelloWebAutomation.Tests
         [Test]
         public void CreateANewTrelloBoard()
         {
-            HomePage_CRUDActionsWithBoard boardCRUDActions = new(webDriver);
-            
-
+            HomePageActionsWithBoard boardActions = new(webDriver);
+            boardActions.WaitForCreateNewBoardBtn();
+            boardActions.ClickOnCreateNewBoardBtn();
+            boardActions.EnterTitleToCreateANewBoard("Test");
+            boardActions.ClickOnCreateBoardSubmitBtn();
+            boardActions.WaitForBoardTitleText();
+            boardActions.GetBoardTitleText
+                .Should().Contain("Test");
         }
 
         [Test]
