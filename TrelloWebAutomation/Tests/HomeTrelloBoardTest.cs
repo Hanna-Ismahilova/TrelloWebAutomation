@@ -47,27 +47,46 @@ namespace TrelloWebAutomation.Tests
             boardActions.ClickOnCreateBoardSubmitBtn();
             boardActions.WaitForBoardTitleText();
             boardActions.GetBoardTitleText
-                .Should().Contain("Test");
+                .Should().Equals("Test");
         }
 
         [Test]
-        public void CloseATrelloBoard()
+        public void CloseReopenATrelloBoard()
         {
-
-        }
-
-        [Test]
-        public void ReopenClosedATrelloBoard()
-        {
-
+            HomePageActionsWithBoard boardActions = new (webDriver);
+            boardActions.WaitForExistingBoardTile();
+            boardActions.ClickOnExistingBoardTile();
+            boardActions.WaitForShowSidebarBtn();
+            boardActions.ClickOnShowMenuSidebar();
+            boardActions.Scroll();
+            boardActions.ClickOnMoreBtn();
+            boardActions.ClickOnCloseBoardBtn();
+            boardActions.ClickOnAlertCloseBtn();
+            boardActions.WaitForReOpenBtn();
+            boardActions.ClickOnReOpenBtn();
+            boardActions.WaitForBoardTitleText();
+            boardActions.GetBoardTitleText
+                .Should().Equals("Test");
         }
 
         [Test]
         public void PermanentlyDeleteATrelloBoard()
         {
-
+            HomePageActionsWithBoard boardActions = new(webDriver);
+            boardActions.WaitForExistingBoardTile();
+            boardActions.ClickOnExistingBoardTile();
+            boardActions.WaitForBoardTitleText();
+            boardActions.ClickOnShowMenuSidebar();
+            boardActions.Scroll();
+            boardActions.ClickOnMoreBtn();
+            boardActions.ClickOnCloseBoardBtn();
+            boardActions.ClickOnAlertCloseBtn();
+            boardActions.WaitForPermanentlyDeleteBoard();
+            boardActions.ClickOnPermanentlyDeleteBoardBtn();
+            boardActions.ClickOnDeleteOnDeleteBoardBtn();
+            boardActions.WaitForBoardNotFoundText();
+            boardActions.GetBoardNotFoundText
+                .Should().Contain("Board not found.");
         }
-
-
     }
 }
