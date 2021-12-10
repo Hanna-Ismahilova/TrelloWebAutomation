@@ -137,9 +137,24 @@ namespace UITrelloAutomationFramework.Base.Elements
         {
             throw new NotImplementedException();
         }
+
+        public string GetDomAttribute(string attributeName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetDomProperty(string propertyName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ISearchContext GetShadowRoot()
+        {
+            throw new NotImplementedException();
+        }
         #endregion
 
-     
+
 
     }
 }

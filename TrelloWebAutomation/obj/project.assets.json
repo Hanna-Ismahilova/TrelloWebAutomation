@@ -14,25 +14,13 @@
           "build/_._": {}
         }
       },
-      "Bogus/33.0.2": {
+      "Bogus/34.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Bogus.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Bogus.dll": {}
-        }
-      },
-      "Cucumber.Messages/6.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Google.Protobuf": "3.7.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Cucumber.Messages.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Cucumber.Messages.dll": {}
         }
       },
       "DnsClient/1.2.0": {
@@ -111,16 +99,16 @@
           "lib/netstandard2.0/ExtentReports.dll": {}
         }
       },
-      "FluentAssertions/5.10.3": {
+      "FluentAssertions/6.2.0": {
         "type": "package",
         "dependencies": {
           "System.Configuration.ConfigurationManager": "4.4.0"
         },
         "compile": {
-          "lib/netcoreapp2.1/FluentAssertions.dll": {}
+          "lib/netcoreapp3.0/FluentAssertions.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.1/FluentAssertions.dll": {}
+          "lib/netcoreapp3.0/FluentAssertions.dll": {}
         }
       },
       "Gherkin/19.0.3": {
@@ -130,18 +118,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Gherkin.dll": {}
-        }
-      },
-      "Google.Protobuf/3.7.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/netstandard1.0/Google.Protobuf.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/Google.Protobuf.dll": {}
         }
       },
       "Microsoft.AspNetCore/2.2.0": {
@@ -680,7 +656,7 @@
           "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.dll": {}
         }
       },
-      "Microsoft.CodeCoverage/16.10.0": {
+      "Microsoft.CodeCoverage/17.0.0": {
         "type": "package",
         "compile": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
@@ -1064,11 +1040,11 @@
           "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Microsoft.NET.Test.Sdk/16.10.0": {
+      "Microsoft.NET.Test.Sdk/17.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeCoverage": "16.10.0",
-          "Microsoft.TestPlatform.TestHost": "16.10.0"
+          "Microsoft.CodeCoverage": "17.0.0",
+          "Microsoft.TestPlatform.TestHost": "17.0.0"
         },
         "compile": {
           "lib/netcoreapp2.1/_._": {}
@@ -1275,7 +1251,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.TestPlatform.ObjectModel/16.10.0": {
+      "Microsoft.TestPlatform.ObjectModel/17.0.0": {
         "type": "package",
         "dependencies": {
           "NuGet.Frameworks": "5.0.0",
@@ -1372,10 +1348,10 @@
           }
         }
       },
-      "Microsoft.TestPlatform.TestHost/16.10.0": {
+      "Microsoft.TestPlatform.TestHost/17.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.TestPlatform.ObjectModel": "16.10.0",
+          "Microsoft.TestPlatform.ObjectModel": "17.0.0",
           "Newtonsoft.Json": "9.0.1"
         },
         "compile": {
@@ -1678,7 +1654,7 @@
           "build/NUnit.props": {}
         }
       },
-      "NUnit3TestAdapter/4.0.0": {
+      "NUnit3TestAdapter/4.1.0": {
         "type": "package",
         "build": {
           "build/netcoreapp2.1/NUnit3TestAdapter.props": {}
@@ -1886,31 +1862,31 @@
           }
         }
       },
-      "Selenium.Support/3.141.0": {
+      "Selenium.Support/4.1.0": {
         "type": "package",
         "dependencies": {
-          "Selenium.WebDriver": "3.141.0"
+          "Selenium.WebDriver": "4.1.0"
         },
         "compile": {
-          "lib/netstandard2.0/WebDriver.Support.dll": {}
+          "lib/net5.0/WebDriver.Support.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/WebDriver.Support.dll": {}
+          "lib/net5.0/WebDriver.Support.dll": {}
         }
       },
-      "Selenium.WebDriver/3.141.0": {
+      "Selenium.WebDriver/4.1.0": {
         "type": "package",
         "dependencies": {
-          "Newtonsoft.Json": "10.0.3"
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/WebDriver.dll": {}
+          "lib/net5.0/WebDriver.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/WebDriver.dll": {}
+          "lib/net5.0/WebDriver.dll": {}
         }
       },
-      "Selenium.WebDriver.ChromeDriver/92.0.4515.10700": {
+      "Selenium.WebDriver.ChromeDriver/96.0.4664.4500": {
         "type": "package",
         "build": {
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
@@ -1928,11 +1904,10 @@
           "lib/netstandard2.0/SharpCompress.dll": {}
         }
       },
-      "SpecFlow/3.9.22": {
+      "SpecFlow/3.9.40": {
         "type": "package",
         "dependencies": {
           "BoDi": "1.5.0",
-          "Cucumber.Messages": "[6.0.1, 7.0.0)",
           "Gherkin": "19.0.3",
           "Microsoft.Extensions.DependencyModel": "1.0.3",
           "SpecFlow.Internal.Json": "1.0.8",
@@ -1972,12 +1947,12 @@
           "lib/netstandard2.0/SpecFlow.Internal.Json.dll": {}
         }
       },
-      "SpecFlow.NUnit/3.9.22": {
+      "SpecFlow.NUnit/3.9.40": {
         "type": "package",
         "dependencies": {
           "NUnit": "3.13.1",
-          "SpecFlow": "[3.9.22]",
-          "SpecFlow.Tools.MsBuild.Generation": "[3.9.22]"
+          "SpecFlow": "[3.9.40]",
+          "SpecFlow.Tools.MsBuild.Generation": "[3.9.40]"
         },
         "compile": {
           "lib/net5.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll": {}
@@ -1990,10 +1965,10 @@
           "build/SpecFlow.NUnit.targets": {}
         }
       },
-      "SpecFlow.Tools.MsBuild.Generation/3.9.22": {
+      "SpecFlow.Tools.MsBuild.Generation/3.9.40": {
         "type": "package",
         "dependencies": {
-          "SpecFlow": "[3.9.22]"
+          "SpecFlow": "[3.9.40]"
         },
         "build": {
           "build/SpecFlow.Tools.MsBuild.Generation.props": {},
@@ -3619,24 +3594,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Bogus": "33.0.2",
+          "Bogus": "34.0.1",
           "DotNetSeleniumExtras.PageObjects": "3.11.0",
           "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
           "ExtentReports": "4.1.0",
-          "FluentAssertions": "5.10.3",
-          "Microsoft.CodeCoverage": "16.10.0",
-          "Microsoft.NET.Test.Sdk": "16.10.0",
+          "FluentAssertions": "6.2.0",
+          "Microsoft.CodeCoverage": "17.0.0",
+          "Microsoft.NET.Test.Sdk": "17.0.0",
           "Microsoft.NETCore.App": "2.2.8",
           "NUnit": "3.13.2",
-          "NUnit3TestAdapter": "4.0.0",
+          "NUnit3TestAdapter": "4.1.0",
           "Newtonsoft.Json": "13.0.1",
-          "Selenium.Support": "3.141.0",
-          "Selenium.WebDriver": "3.141.0",
-          "Selenium.WebDriver.ChromeDriver": "92.0.4515.10700",
-          "SpecFlow": "3.9.22",
+          "Selenium.Support": "4.1.0",
+          "Selenium.WebDriver": "4.1.0",
+          "Selenium.WebDriver.ChromeDriver": "96.0.4664.4500",
+          "SpecFlow": "3.9.40",
           "SpecFlow.Assist.Dynamic": "1.4.2",
-          "SpecFlow.NUnit": "3.9.22",
-          "SpecFlow.Tools.MsBuild.Generation": "3.9.22",
+          "SpecFlow.NUnit": "3.9.40",
+          "SpecFlow.Tools.MsBuild.Generation": "3.9.40",
           "elmah.corelibrary": "1.2.2"
         },
         "compile": {
@@ -3668,34 +3643,23 @@
         "tools/_._"
       ]
     },
-    "Bogus/33.0.2": {
-      "sha512": "92CcSgl7KLEw7lerMytjY504IPnhmYqDkCgIPm5GVfiZPslRWUcgWvtoNYhKbSU4m/Ms7giKP8OxPAFTFBgC3w==",
+    "Bogus/34.0.1": {
+      "sha512": "49iq7QrD0wb7V4/FcK8p3dWdJxNUbojaqK9L6KRvdikIuRjt38EsNp7QXICcYdbYw01K8BHUdxlnTNn/YX3qDA==",
       "type": "package",
-      "path": "bogus/33.0.2",
+      "path": "bogus/34.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "bogus.33.0.2.nupkg.sha512",
+        "bogus.34.0.1.nupkg.sha512",
         "bogus.nuspec",
         "lib/net40/Bogus.dll",
         "lib/net40/Bogus.xml",
+        "lib/net6.0/Bogus.dll",
+        "lib/net6.0/Bogus.xml",
         "lib/netstandard1.3/Bogus.dll",
         "lib/netstandard1.3/Bogus.xml",
         "lib/netstandard2.0/Bogus.dll",
         "lib/netstandard2.0/Bogus.xml"
-      ]
-    },
-    "Cucumber.Messages/6.0.1": {
-      "sha512": "R/2XAU6Zwdnlgga/YLYxwbKf4ai0JYyeX25l85t0nNgagR2aP8hnqrLtJjgswuXVa2WlQdjXUfJqUX8YTjzlXw==",
-      "type": "package",
-      "path": "cucumber.messages/6.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "cucumber.messages.6.0.1.nupkg.sha512",
-        "cucumber.messages.nuspec",
-        "lib/net45/Cucumber.Messages.dll",
-        "lib/netstandard2.0/Cucumber.Messages.dll"
       ]
     },
     "DnsClient/1.2.0": {
@@ -3785,34 +3749,25 @@
         "lib/netstandard2.0/ExtentReports.dll"
       ]
     },
-    "FluentAssertions/5.10.3": {
-      "sha512": "gVPEVp1hLVqcv+7Q2wiDf7kqCNn7+bQcQ0jbJ2mcRT6CeRoZl1tNkqvzSIhvekyldDptk77j1b03MXTTRIqqpg==",
+    "FluentAssertions/6.2.0": {
+      "sha512": "5YOZLB0Tay1bw+wEYZTAZlPThQ/Yntk1HSPJYluMd5PW/Xg9E8I1mRC03AKRsnuANBR0kYaHq0NX1fg7RgrGNA==",
       "type": "package",
-      "path": "fluentassertions/5.10.3",
+      "path": "fluentassertions/6.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "FluentAssertions.png",
-        "fluentassertions.5.10.3.nupkg.sha512",
+        "fluentassertions.6.2.0.nupkg.sha512",
         "fluentassertions.nuspec",
-        "lib/net45/FluentAssertions.dll",
-        "lib/net45/FluentAssertions.pdb",
-        "lib/net45/FluentAssertions.xml",
         "lib/net47/FluentAssertions.dll",
         "lib/net47/FluentAssertions.pdb",
         "lib/net47/FluentAssertions.xml",
-        "lib/netcoreapp2.0/FluentAssertions.dll",
-        "lib/netcoreapp2.0/FluentAssertions.pdb",
-        "lib/netcoreapp2.0/FluentAssertions.xml",
         "lib/netcoreapp2.1/FluentAssertions.dll",
         "lib/netcoreapp2.1/FluentAssertions.pdb",
         "lib/netcoreapp2.1/FluentAssertions.xml",
-        "lib/netstandard1.3/FluentAssertions.dll",
-        "lib/netstandard1.3/FluentAssertions.pdb",
-        "lib/netstandard1.3/FluentAssertions.xml",
-        "lib/netstandard1.6/FluentAssertions.dll",
-        "lib/netstandard1.6/FluentAssertions.pdb",
-        "lib/netstandard1.6/FluentAssertions.xml",
+        "lib/netcoreapp3.0/FluentAssertions.dll",
+        "lib/netcoreapp3.0/FluentAssertions.pdb",
+        "lib/netcoreapp3.0/FluentAssertions.xml",
         "lib/netstandard2.0/FluentAssertions.dll",
         "lib/netstandard2.0/FluentAssertions.pdb",
         "lib/netstandard2.0/FluentAssertions.xml",
@@ -3835,23 +3790,6 @@
         "lib/net45/Gherkin.xml",
         "lib/netstandard2.0/Gherkin.dll",
         "lib/netstandard2.0/Gherkin.xml"
-      ]
-    },
-    "Google.Protobuf/3.7.0": {
-      "sha512": "OvssyqQTrpJgdH4fjztsCV9AhUo9jgGpDbZ5XAAqC+X6MIUsifHk8Woeom1HXlHdqo/XebiEMpYySE9AxybJ9g==",
-      "type": "package",
-      "path": "google.protobuf/3.7.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "google.protobuf.3.7.0.nupkg.sha512",
-        "google.protobuf.nuspec",
-        "lib/net45/Google.Protobuf.dll",
-        "lib/net45/Google.Protobuf.pdb",
-        "lib/net45/Google.Protobuf.xml",
-        "lib/netstandard1.0/Google.Protobuf.dll",
-        "lib/netstandard1.0/Google.Protobuf.pdb",
-        "lib/netstandard1.0/Google.Protobuf.xml"
       ]
     },
     "Microsoft.AspNetCore/2.2.0": {
@@ -4418,10 +4356,10 @@
         "microsoft.codeanalysis.csharp.nuspec"
       ]
     },
-    "Microsoft.CodeCoverage/16.10.0": {
-      "sha512": "7g0UjAwhEi2OBBv8SDV3wZ6J103cQyZbKVgDy59fnNdlbv0XpUCfdBZiSW5yVK/d2jp6faCdGh7VnI/F2JZO+Q==",
+    "Microsoft.CodeCoverage/17.0.0": {
+      "sha512": "+B+09FPYBtf+cXfZOPIgpnP5mzLq5QdlBo+JEFy9CdqBaWHWE/YMY0Mos9uDsZhcgFegJm9GigAgMyqBZyfq+Q==",
       "type": "package",
-      "path": "microsoft.codecoverage/16.10.0",
+      "path": "microsoft.codecoverage/17.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4480,7 +4418,7 @@
         "build/netstandard1.0/zh-Hant/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
         "lib/net45/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
         "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
-        "microsoft.codecoverage.16.10.0.nupkg.sha512",
+        "microsoft.codecoverage.17.0.0.nupkg.sha512",
         "microsoft.codecoverage.nuspec"
       ]
     },
@@ -4977,10 +4915,10 @@
         "microsoft.net.http.headers.nuspec"
       ]
     },
-    "Microsoft.NET.Test.Sdk/16.10.0": {
-      "sha512": "/9x6TV1SUi+rtKi8UYa7ml7SEWhb0A5FuyeF0nwwUKVjdk5WaWuLPjntHVWoDuYP25KBruoxWxs7WdhDMjWxXw==",
+    "Microsoft.NET.Test.Sdk/17.0.0": {
+      "sha512": "fJcnMY3jX1MzJvhGvUWauRhU5eQsOaHdwlrcnI3NabBhbi8WLAkMFI8d0YnewA/+b9q/U7vbhp8Xmh1vJ05FYQ==",
       "type": "package",
-      "path": "microsoft.net.test.sdk/16.10.0",
+      "path": "microsoft.net.test.sdk/17.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5007,7 +4945,7 @@
         "lib/netcoreapp1.0/_._",
         "lib/netcoreapp2.1/_._",
         "lib/uap10.0/_._",
-        "microsoft.net.test.sdk.16.10.0.nupkg.sha512",
+        "microsoft.net.test.sdk.17.0.0.nupkg.sha512",
         "microsoft.net.test.sdk.nuspec"
       ]
     },
@@ -5352,10 +5290,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.TestPlatform.ObjectModel/16.10.0": {
-      "sha512": "DYp9eKg3zffZuePhgdUrh5tHkt1YOaSraVH87r4WXDOjag1/n08aFl1vRhWP8y2RoBLTHdcZRTDOhQyYMxAYNg==",
+    "Microsoft.TestPlatform.ObjectModel/17.0.0": {
+      "sha512": "WMugCdPkA8U/BsSRc+3RN+DXcaYSDvp/s0MofVld08iF1O5fek4iKecygk6NruNf1rgJsv4LK71mrwbyeqhzHA==",
       "type": "package",
-      "path": "microsoft.testplatform.objectmodel/16.10.0",
+      "path": "microsoft.testplatform.objectmodel/17.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5593,14 +5531,14 @@
         "lib/uap10.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
         "lib/uap10.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
         "lib/uap10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "microsoft.testplatform.objectmodel.16.10.0.nupkg.sha512",
+        "microsoft.testplatform.objectmodel.17.0.0.nupkg.sha512",
         "microsoft.testplatform.objectmodel.nuspec"
       ]
     },
-    "Microsoft.TestPlatform.TestHost/16.10.0": {
-      "sha512": "KAlB2QQRwznIH02WNl9eAuUP6/tn4IbAw4EXrvV1POTUjxuv4Dqg0u3Nn5lC9T3WIHupCHfsTcJMgsJYdi31Ig==",
+    "Microsoft.TestPlatform.TestHost/17.0.0": {
+      "sha512": "xkKFzm0hylHF0SlDj78ACYMJC/i8fQ3i16sDDNYoKnjTsstGSQfuSBJ+QT4nqRXk/fOiYTh+iY0KIX5N7HTLuQ==",
       "type": "package",
-      "path": "microsoft.testplatform.testhost/16.10.0",
+      "path": "microsoft.testplatform.testhost/17.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5814,7 +5752,7 @@
         "lib/uap10.0/Microsoft.VisualStudio.TestPlatform.Common.dll",
         "lib/uap10.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
         "lib/uap10.0/testhost.dll",
-        "microsoft.testplatform.testhost.16.10.0.nupkg.sha512",
+        "microsoft.testplatform.testhost.17.0.0.nupkg.sha512",
         "microsoft.testplatform.testhost.nuspec"
       ]
     },
@@ -6147,10 +6085,10 @@
         "nunit.nuspec"
       ]
     },
-    "NUnit3TestAdapter/4.0.0": {
-      "sha512": "5gCkytgQWL93M5s9Rnl4CfSUhn95VsuMVLYjmZe8K7dNRF7kzrBMPsBTyLNCga5qLW7RM/o591J+HVrV1QMaVQ==",
+    "NUnit3TestAdapter/4.1.0": {
+      "sha512": "v45RJt87pPAWlCDIftmtQhNK0mXd81IcnTE6SmWUmxi6YegCvkQogZQ/ROw4zyNyo2HI3Ckby3LB0GHF4bEIXg==",
       "type": "package",
-      "path": "nunit3testadapter/4.0.0",
+      "path": "nunit3testadapter/4.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6168,7 +6106,7 @@
         "build/netcoreapp2.1/nunit.engine.core.dll",
         "build/netcoreapp2.1/nunit.engine.dll",
         "build/netcoreapp2.1/testcentric.engine.metadata.dll",
-        "nunit3testadapter.4.0.0.nupkg.sha512",
+        "nunit3testadapter.4.1.0.nupkg.sha512",
         "nunit3testadapter.nuspec"
       ]
     },
@@ -6425,48 +6363,48 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "Selenium.Support/3.141.0": {
-      "sha512": "F4sxMCXGyqWtbw5qsniJRgza2UsBnslHwFgNA2p7hPxvJhqg73lyXu/ZscJ7FSfRvq3eJrosysv92+4sZ3vWsg==",
+    "Selenium.Support/4.1.0": {
+      "sha512": "wuK5cfgVaimOZqyuriY2geGpNsI9DWky8CuBlrkBnmebkSrRftxqwyUVy0NLooHaAB2iaMj7qM+VOdUEX5bCHQ==",
       "type": "package",
-      "path": "selenium.support/3.141.0",
+      "path": "selenium.support/4.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net35/WebDriver.Support.dll",
-        "lib/net35/WebDriver.Support.xml",
-        "lib/net40/WebDriver.Support.dll",
-        "lib/net40/WebDriver.Support.xml",
+        "images/icon.png",
         "lib/net45/WebDriver.Support.dll",
-        "lib/net45/WebDriver.Support.xml",
+        "lib/net46/WebDriver.Support.dll",
+        "lib/net47/WebDriver.Support.dll",
+        "lib/net48/WebDriver.Support.dll",
+        "lib/net5.0/WebDriver.Support.dll",
         "lib/netstandard2.0/WebDriver.Support.dll",
-        "lib/netstandard2.0/WebDriver.Support.xml",
-        "selenium.support.3.141.0.nupkg.sha512",
+        "lib/netstandard2.1/WebDriver.Support.dll",
+        "selenium.support.4.1.0.nupkg.sha512",
         "selenium.support.nuspec"
       ]
     },
-    "Selenium.WebDriver/3.141.0": {
-      "sha512": "wPqzXO3f79DzqauTZSzLMKiaBCN0Z2Mv7KvWP+hnV6EL88zh/pJJnFtdIR1X5wa3hsTOpF/bBJs45rz7kArsiA==",
+    "Selenium.WebDriver/4.1.0": {
+      "sha512": "d4smisz4a/wJCM2TzkKTl+BLfvZUTvaobhKElDfCVZlvY8ThsC8VAoBNWTlg1H/GGzIP//yVGko/W0FILTgkYA==",
       "type": "package",
-      "path": "selenium.webdriver/3.141.0",
+      "path": "selenium.webdriver/4.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net35/WebDriver.dll",
-        "lib/net35/WebDriver.xml",
-        "lib/net40/WebDriver.dll",
-        "lib/net40/WebDriver.xml",
+        "images/icon.png",
         "lib/net45/WebDriver.dll",
-        "lib/net45/WebDriver.xml",
+        "lib/net46/WebDriver.dll",
+        "lib/net47/WebDriver.dll",
+        "lib/net48/WebDriver.dll",
+        "lib/net5.0/WebDriver.dll",
         "lib/netstandard2.0/WebDriver.dll",
-        "lib/netstandard2.0/WebDriver.xml",
-        "selenium.webdriver.3.141.0.nupkg.sha512",
+        "lib/netstandard2.1/WebDriver.dll",
+        "selenium.webdriver.4.1.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     },
-    "Selenium.WebDriver.ChromeDriver/92.0.4515.10700": {
-      "sha512": "1izYN4xibfIy9MgQvMpSzoNPU5TugR18aOcXptSVpVrbrgEl6pah3kgNm7WPwSknG0UX4E2u//oq0oEbqzsoqg==",
+    "Selenium.WebDriver.ChromeDriver/96.0.4664.4500": {
+      "sha512": "7bH+2/bX4IqPXxnMsbD820pCb1DFLeESIbjpUL/Zgq5wfKJHTxtknrQ1wnlMJmWtbpoNcj6Zck7OfoIVstl3zQ==",
       "type": "package",
-      "path": "selenium.webdriver.chromedriver/92.0.4515.10700",
+      "path": "selenium.webdriver.chromedriver/96.0.4664.4500",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6477,7 +6415,7 @@
         "driver/mac64/chromedriver",
         "driver/win32/chromedriver.exe",
         "nupkg-icon.png",
-        "selenium.webdriver.chromedriver.92.0.4515.10700.nupkg.sha512",
+        "selenium.webdriver.chromedriver.96.0.4664.4500.nupkg.sha512",
         "selenium.webdriver.chromedriver.nuspec"
       ]
     },
@@ -6497,10 +6435,10 @@
         "sharpcompress.nuspec"
       ]
     },
-    "SpecFlow/3.9.22": {
-      "sha512": "A3wZUoJaJjkll/Qvun8SJo7W869kO+1hm/FNkidNdnfbmOJA4Q8f0J80pr5wqIkKaYMQTRVvt18Y6HisgEZbUw==",
+    "SpecFlow/3.9.40": {
+      "sha512": "ru7twstJSKrTv3XfcxyttzrdZ/FvXOF5cYN/x/2js755wVk1zpSPUPa/ml3lSZmPNkS5OAOuSt1JLEa5hhDhdw==",
       "type": "package",
-      "path": "specflow/3.9.22",
+      "path": "specflow/3.9.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6519,7 +6457,7 @@
         "lib/netstandard2.0/TechTalk.SpecFlow.dll",
         "lib/netstandard2.0/TechTalk.SpecFlow.pdb",
         "lib/netstandard2.0/TechTalk.SpecFlow.xml",
-        "specflow.3.9.22.nupkg.sha512",
+        "specflow.3.9.40.nupkg.sha512",
         "specflow.nuspec"
       ]
     },
@@ -6553,10 +6491,10 @@
         "specflow.internal.json.nuspec"
       ]
     },
-    "SpecFlow.NUnit/3.9.22": {
-      "sha512": "o0d1zHMf9NcXLxXhG2NllWDnJCItKtDbpKyL5Kltf9AUYam7opvm3uFYG03WePnoPU9qgD+KLOM9IjNDZ4quaw==",
+    "SpecFlow.NUnit/3.9.40": {
+      "sha512": "+brbJAe0LLzmXh2L78kOJc2fa5EH/7cugmbnfZQdBeWCzL6iFDWFl3MHZ0xx/2BQyu6N/xokqw53Rl30LIo7lw==",
       "type": "package",
-      "path": "specflow.nunit/3.9.22",
+      "path": "specflow.nunit/3.9.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6570,6 +6508,9 @@
         "build/net5.0/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.deps.json",
         "build/net5.0/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.dll",
         "build/net5.0/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.pdb",
+        "build/net6.0/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.deps.json",
+        "build/net6.0/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.dll",
+        "build/net6.0/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.pdb",
         "build/netcoreapp2.1/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.dll",
         "build/netcoreapp2.1/TechTalk.SpecFlow.NUnit.Generator.SpecFlowPlugin.pdb",
         "images/specflow-icon.png",
@@ -6577,16 +6518,18 @@
         "lib/net461/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb",
         "lib/net5.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll",
         "lib/net5.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb",
+        "lib/net6.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll",
+        "lib/net6.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb",
         "lib/netstandard2.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll",
         "lib/netstandard2.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb",
-        "specflow.nunit.3.9.22.nupkg.sha512",
+        "specflow.nunit.3.9.40.nupkg.sha512",
         "specflow.nunit.nuspec"
       ]
     },
-    "SpecFlow.Tools.MsBuild.Generation/3.9.22": {
-      "sha512": "JrX8QY9mN+X5RUsjS2GY6l+eOAZ6S/sWiS6yi2+RxyyrvPmskQH7TYCm69dcNDefncXg/wZk3g/SE3VtjfdcVg==",
+    "SpecFlow.Tools.MsBuild.Generation/3.9.40": {
+      "sha512": "DFClKzQH0ijUBiZNpas8sQ66EdGwVSS18UtC1hVIM7PiT0F+xzKs4VX5hsz+ZY/RKyQEfY9HELUAC8AoZicxSg==",
       "type": "package",
-      "path": "specflow.tools.msbuild.generation/3.9.22",
+      "path": "specflow.tools.msbuild.generation/3.9.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6603,12 +6546,10 @@
         "licenses/Gherkin-LICENSE-MIT.txt",
         "licenses/Newtonsoft.Json-LICENSE-MIT.md",
         "licenses/System.ValueTuple-LICENSE-MIT.txt",
-        "specflow.tools.msbuild.generation.3.9.22.nupkg.sha512",
+        "specflow.tools.msbuild.generation.3.9.40.nupkg.sha512",
         "specflow.tools.msbuild.generation.nuspec",
         "tasks/net461/BoDi.dll",
-        "tasks/net461/Cucumber.Messages.dll",
         "tasks/net461/Gherkin.dll",
-        "tasks/net461/Google.Protobuf.dll",
         "tasks/net461/Microsoft.Build.Framework.dll",
         "tasks/net461/Microsoft.Build.Tasks.Core.dll",
         "tasks/net461/Microsoft.Build.Utilities.Core.dll",
@@ -6733,9 +6674,7 @@
         "tasks/net461/TechTalk.SpecFlow.dll",
         "tasks/net461/netstandard.dll",
         "tasks/net5.0/BoDi.dll",
-        "tasks/net5.0/Cucumber.Messages.dll",
         "tasks/net5.0/Gherkin.dll",
-        "tasks/net5.0/Google.Protobuf.dll",
         "tasks/net5.0/Microsoft.Build.Framework.dll",
         "tasks/net5.0/Microsoft.Build.Tasks.Core.dll",
         "tasks/net5.0/Microsoft.Build.Utilities.Core.dll",
@@ -6764,10 +6703,38 @@
         "tasks/net5.0/TechTalk.SpecFlow.Parser.dll",
         "tasks/net5.0/TechTalk.SpecFlow.Utils.dll",
         "tasks/net5.0/TechTalk.SpecFlow.dll",
+        "tasks/net6.0/BoDi.dll",
+        "tasks/net6.0/Gherkin.dll",
+        "tasks/net6.0/Microsoft.Build.Framework.dll",
+        "tasks/net6.0/Microsoft.Build.Tasks.Core.dll",
+        "tasks/net6.0/Microsoft.Build.Utilities.Core.dll",
+        "tasks/net6.0/Microsoft.Build.dll",
+        "tasks/net6.0/Microsoft.DotNet.PlatformAbstractions.dll",
+        "tasks/net6.0/Microsoft.Extensions.DependencyModel.dll",
+        "tasks/net6.0/Microsoft.VisualStudio.Composition.NetFxAttributes.dll",
+        "tasks/net6.0/Microsoft.VisualStudio.Composition.dll",
+        "tasks/net6.0/Microsoft.VisualStudio.Threading.dll",
+        "tasks/net6.0/Microsoft.VisualStudio.Validation.dll",
+        "tasks/net6.0/Newtonsoft.Json.dll",
+        "tasks/net6.0/SpecFlow.Internal.Json.dll",
+        "tasks/net6.0/SpecFlow.Tools.MsBuild.Generation.deps.json",
+        "tasks/net6.0/SpecFlow.Tools.MsBuild.Generation.dll",
+        "tasks/net6.0/System.CodeDom.dll",
+        "tasks/net6.0/System.ComponentModel.Composition.dll",
+        "tasks/net6.0/System.Composition.AttributedModel.dll",
+        "tasks/net6.0/System.Composition.Convention.dll",
+        "tasks/net6.0/System.Composition.Hosting.dll",
+        "tasks/net6.0/System.Composition.Runtime.dll",
+        "tasks/net6.0/System.Composition.TypedParts.dll",
+        "tasks/net6.0/System.Configuration.ConfigurationManager.dll",
+        "tasks/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "tasks/net6.0/System.Security.Permissions.dll",
+        "tasks/net6.0/TechTalk.SpecFlow.Generator.dll",
+        "tasks/net6.0/TechTalk.SpecFlow.Parser.dll",
+        "tasks/net6.0/TechTalk.SpecFlow.Utils.dll",
+        "tasks/net6.0/TechTalk.SpecFlow.dll",
         "tasks/netcoreapp2.1/BoDi.dll",
-        "tasks/netcoreapp2.1/Cucumber.Messages.dll",
         "tasks/netcoreapp2.1/Gherkin.dll",
-        "tasks/netcoreapp2.1/Google.Protobuf.dll",
         "tasks/netcoreapp2.1/Microsoft.Build.Framework.dll",
         "tasks/netcoreapp2.1/Microsoft.Build.Tasks.Core.dll",
         "tasks/netcoreapp2.1/Microsoft.Build.Utilities.Core.dll",
@@ -11381,22 +11348,22 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Bogus >= 33.0.2",
+      "Bogus >= 34.0.1",
       "DotNetSeleniumExtras.PageObjects >= 3.11.0",
       "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
-      "FluentAssertions >= 5.10.3",
-      "Microsoft.CodeCoverage >= 16.10.0",
-      "Microsoft.NET.Test.Sdk >= 16.10.0",
+      "FluentAssertions >= 6.2.0",
+      "Microsoft.CodeCoverage >= 17.0.0",
+      "Microsoft.NET.Test.Sdk >= 17.0.0",
       "Microsoft.NETCore.App >= 2.2.8",
-      "NUnit3TestAdapter >= 4.0.0",
+      "NUnit3TestAdapter >= 4.1.0",
       "Newtonsoft.Json >= 13.0.1",
-      "Selenium.Support >= 3.141.0",
-      "Selenium.WebDriver >= 3.141.0",
-      "Selenium.WebDriver.ChromeDriver >= 92.0.4515.10700",
-      "SpecFlow >= 3.9.22",
+      "Selenium.Support >= 4.1.0",
+      "Selenium.WebDriver >= 4.1.0",
+      "Selenium.WebDriver.ChromeDriver >= 96.0.4664.4500",
+      "SpecFlow >= 3.9.40",
       "SpecFlow.Assist.Dynamic >= 1.4.2",
-      "SpecFlow.NUnit >= 3.9.22",
-      "SpecFlow.Tools.MsBuild.Generation >= 3.9.22",
+      "SpecFlow.NUnit >= 3.9.40",
+      "SpecFlow.Tools.MsBuild.Generation >= 3.9.40",
       "UITrelloAutomationFramework >= 1.0.0",
       "WindowsAzure.MobileServices >= 1.3.2",
       "elmah.corelibrary >= 1.2.2",
@@ -11448,7 +11415,7 @@
         "dependencies": {
           "Bogus": {
             "target": "Package",
-            "version": "[33.0.2, )"
+            "version": "[34.0.1, )"
           },
           "DotNetSeleniumExtras.PageObjects": {
             "target": "Package",
@@ -11460,15 +11427,15 @@
           },
           "FluentAssertions": {
             "target": "Package",
-            "version": "[5.10.3, )"
+            "version": "[6.2.0, )"
           },
           "Microsoft.CodeCoverage": {
             "target": "Package",
-            "version": "[16.10.0, )"
+            "version": "[17.0.0, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
-            "version": "[16.10.0, )"
+            "version": "[17.0.0, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
@@ -11476,7 +11443,7 @@
           },
           "NUnit3TestAdapter": {
             "target": "Package",
-            "version": "[4.0.0, )"
+            "version": "[4.1.0, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",
@@ -11484,19 +11451,19 @@
           },
           "Selenium.Support": {
             "target": "Package",
-            "version": "[3.141.0, )"
+            "version": "[4.1.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
-            "version": "[3.141.0, )"
+            "version": "[4.1.0, )"
           },
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
-            "version": "[92.0.4515.10700, )"
+            "version": "[96.0.4664.4500, )"
           },
           "SpecFlow": {
             "target": "Package",
-            "version": "[3.9.22, )"
+            "version": "[3.9.40, )"
           },
           "SpecFlow.Assist.Dynamic": {
             "target": "Package",
@@ -11504,11 +11471,11 @@
           },
           "SpecFlow.NUnit": {
             "target": "Package",
-            "version": "[3.9.22, )"
+            "version": "[3.9.40, )"
           },
           "SpecFlow.Tools.MsBuild.Generation": {
             "target": "Package",
-            "version": "[3.9.22, )"
+            "version": "[3.9.40, )"
           },
           "WindowsAzure.MobileServices": {
             "target": "Package",

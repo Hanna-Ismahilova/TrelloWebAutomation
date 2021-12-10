@@ -1,7 +1,5 @@
-﻿using AventStack.ExtentReports;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Remote;
 using UITrelloAutomationFramework.Helpers;
 
 namespace UITrelloAutomationFramework.Base
@@ -18,7 +16,6 @@ namespace UITrelloAutomationFramework.Base
 
         }
 
-        //public RemoteWebDriver Driver { get; set; }
         public static IWebDriver WebDriverStart()
         {
 
@@ -38,12 +35,6 @@ namespace UITrelloAutomationFramework.Base
             }
         }
 
-        //public MediaEntityModelProvider CaptureScreenshotAndReturnModel(string name)
-        //{
-        //    var screenshot = ((ITakesScreenshot)Driver).GetScreenshot().AsBase64EncodedString;
-        //    return MediaEntityBuilder.CreateScreenCaptureFromBase64String(screenshot, name).Build();
-
-        //}
         public static void LoadPage()
         {
             _webDriver.Url = AppConfig.appSettings.URLMain;

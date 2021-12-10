@@ -42,7 +42,7 @@
           "dependencies": {
             "Bogus": {
               "target": "Package",
-              "version": "[33.0.2, )"
+              "version": "[34.0.1, )"
             },
             "DotNetSeleniumExtras.PageObjects": {
               "target": "Package",
@@ -58,15 +58,15 @@
             },
             "FluentAssertions": {
               "target": "Package",
-              "version": "[5.10.3, )"
+              "version": "[6.2.0, )"
             },
             "Microsoft.CodeCoverage": {
               "target": "Package",
-              "version": "[16.10.0, )"
+              "version": "[17.0.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.10.0, )"
+              "version": "[17.0.0, )"
             },
             "Microsoft.NETCore.App": {
               "target": "Package",
@@ -78,7 +78,7 @@
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[4.0.0, )"
+              "version": "[4.1.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -86,19 +86,19 @@
             },
             "Selenium.Support": {
               "target": "Package",
-              "version": "[3.141.0, )"
+              "version": "[4.1.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[3.141.0, )"
+              "version": "[4.1.0, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[92.0.4515.10700, )"
+              "version": "[96.0.4664.4500, )"
             },
             "SpecFlow": {
               "target": "Package",
-              "version": "[3.9.22, )"
+              "version": "[3.9.40, )"
             },
             "SpecFlow.Assist.Dynamic": {
               "target": "Package",
@@ -106,11 +106,11 @@
             },
             "SpecFlow.NUnit": {
               "target": "Package",
-              "version": "[3.9.22, )"
+              "version": "[3.9.40, )"
             },
             "SpecFlow.Tools.MsBuild.Generation": {
               "target": "Package",
-              "version": "[3.9.22, )"
+              "version": "[3.9.40, )"
             },
             "elmah.corelibrary": {
               "target": "Package",
@@ -178,7 +178,7 @@
           "dependencies": {
             "Bogus": {
               "target": "Package",
-              "version": "[33.0.2, )"
+              "version": "[34.0.1, )"
             },
             "DotNetSeleniumExtras.PageObjects": {
               "target": "Package",
@@ -190,15 +190,15 @@
             },
             "FluentAssertions": {
               "target": "Package",
-              "version": "[5.10.3, )"
+              "version": "[6.2.0, )"
             },
             "Microsoft.CodeCoverage": {
               "target": "Package",
-              "version": "[16.10.0, )"
+              "version": "[17.0.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.10.0, )"
+              "version": "[17.0.0, )"
             },
             "Microsoft.NETCore.App": {
               "target": "Package",
@@ -206,7 +206,7 @@
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[4.0.0, )"
+              "version": "[4.1.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -214,19 +214,19 @@
             },
             "Selenium.Support": {
               "target": "Package",
-              "version": "[3.141.0, )"
+              "version": "[4.1.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[3.141.0, )"
+              "version": "[4.1.0, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[92.0.4515.10700, )"
+              "version": "[96.0.4664.4500, )"
             },
             "SpecFlow": {
               "target": "Package",
-              "version": "[3.9.22, )"
+              "version": "[3.9.40, )"
             },
             "SpecFlow.Assist.Dynamic": {
               "target": "Package",
@@ -234,11 +234,11 @@
             },
             "SpecFlow.NUnit": {
               "target": "Package",
-              "version": "[3.9.22, )"
+              "version": "[3.9.40, )"
             },
             "SpecFlow.Tools.MsBuild.Generation": {
               "target": "Package",
-              "version": "[3.9.22, )"
+              "version": "[3.9.40, )"
             },
             "WindowsAzure.MobileServices": {
               "target": "Package",
