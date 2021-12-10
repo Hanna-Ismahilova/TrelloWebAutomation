@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrelloWebAutomation", "TrelloWebAutomation\TrelloWebAutomation.csproj", "{824609C6-1ADA-47BD-87FD-048C1DFA7F87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrelloWebAutomation.UITests", "TrelloWebAutomation\TrelloWebAutomation.UITests.csproj", "{824609C6-1ADA-47BD-87FD-048C1DFA7F87}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UITrelloAutomationFramework", "ClassLibrary1\UITrelloAutomationFramework.csproj", "{6C4D6D2B-1498-4434-9000-32B83B44B38E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrelloWebAutomation.PageObjects", "TrelloWebAutomation.PageObjects\TrelloWebAutomation.PageObjects.csproj", "{AC64DDFF-8632-41FC-B2FA-C00BEDDC5095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrelloWebAutomation.TestData", "TrelloWebAutomation.TestData\TrelloWebAutomation.TestData.csproj", "{64CA196C-4748-4C40-8294-948854374674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrelloTestAutomation.Common", "TrelloTestAutomation.Common\TrelloTestAutomation.Common.csproj", "{88AFCF73-7CC4-4721-89A9-A2D065463440}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{6C4D6D2B-1498-4434-9000-32B83B44B38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C4D6D2B-1498-4434-9000-32B83B44B38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C4D6D2B-1498-4434-9000-32B83B44B38E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC64DDFF-8632-41FC-B2FA-C00BEDDC5095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC64DDFF-8632-41FC-B2FA-C00BEDDC5095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC64DDFF-8632-41FC-B2FA-C00BEDDC5095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC64DDFF-8632-41FC-B2FA-C00BEDDC5095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64CA196C-4748-4C40-8294-948854374674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64CA196C-4748-4C40-8294-948854374674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64CA196C-4748-4C40-8294-948854374674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64CA196C-4748-4C40-8294-948854374674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88AFCF73-7CC4-4721-89A9-A2D065463440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88AFCF73-7CC4-4721-89A9-A2D065463440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88AFCF73-7CC4-4721-89A9-A2D065463440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88AFCF73-7CC4-4721-89A9-A2D065463440}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

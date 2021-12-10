@@ -3590,6 +3590,33 @@
           "lib/net45/Microsoft.WindowsAzure.Mobile.dll": {}
         }
       },
+      "TrelloTestAutomation.Common/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/TrelloTestAutomation.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TrelloTestAutomation.Common.dll": {}
+        }
+      },
+      "TrelloWebAutomation.PageObjects/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/TrelloWebAutomation.PageObjects.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TrelloWebAutomation.PageObjects.dll": {}
+        }
+      },
+      "TrelloWebAutomation.TestData/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/TrelloWebAutomation.TestData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TrelloWebAutomation.TestData.dll": {}
+        }
+      },
       "UITrelloAutomationFramework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -11340,6 +11367,21 @@
         "windowsazure.mobileservices.nuspec"
       ]
     },
+    "TrelloTestAutomation.Common/1.0.0": {
+      "type": "project",
+      "path": "../TrelloTestAutomation.Common/TrelloTestAutomation.Common.csproj",
+      "msbuildProject": "../TrelloTestAutomation.Common/TrelloTestAutomation.Common.csproj"
+    },
+    "TrelloWebAutomation.PageObjects/1.0.0": {
+      "type": "project",
+      "path": "../TrelloWebAutomation.PageObjects/TrelloWebAutomation.PageObjects.csproj",
+      "msbuildProject": "../TrelloWebAutomation.PageObjects/TrelloWebAutomation.PageObjects.csproj"
+    },
+    "TrelloWebAutomation.TestData/1.0.0": {
+      "type": "project",
+      "path": "../TrelloWebAutomation.TestData/TrelloWebAutomation.TestData.csproj",
+      "msbuildProject": "../TrelloWebAutomation.TestData/TrelloWebAutomation.TestData.csproj"
+    },
     "UITrelloAutomationFramework/1.0.0": {
       "type": "project",
       "path": "../ClassLibrary1/UITrelloAutomationFramework.csproj",
@@ -11364,6 +11406,9 @@
       "SpecFlow.Assist.Dynamic >= 1.4.2",
       "SpecFlow.NUnit >= 3.9.40",
       "SpecFlow.Tools.MsBuild.Generation >= 3.9.40",
+      "TrelloTestAutomation.Common >= 1.0.0",
+      "TrelloWebAutomation.PageObjects >= 1.0.0",
+      "TrelloWebAutomation.TestData >= 1.0.0",
       "UITrelloAutomationFramework >= 1.0.0",
       "WindowsAzure.MobileServices >= 1.3.2",
       "elmah.corelibrary >= 1.2.2",
@@ -11376,9 +11421,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation\\TrelloWebAutomation.csproj",
-      "projectName": "TrelloWebAutomation",
-      "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation\\TrelloWebAutomation.csproj",
+      "projectUniqueName": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation\\TrelloWebAutomation.UITests.csproj",
+      "projectName": "TrelloWebAutomation.UITests",
+      "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation\\TrelloWebAutomation.UITests.csproj",
       "packagesPath": "C:\\Users\\Hanna_Ismahilova\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation\\obj\\",
       "projectStyle": "PackageReference",
@@ -11399,6 +11444,15 @@
           "projectReferences": {
             "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\ClassLibrary1\\UITrelloAutomationFramework.csproj": {
               "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\ClassLibrary1\\UITrelloAutomationFramework.csproj"
+            },
+            "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloTestAutomation.Common\\TrelloTestAutomation.Common.csproj": {
+              "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloTestAutomation.Common\\TrelloTestAutomation.Common.csproj"
+            },
+            "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation.PageObjects\\TrelloWebAutomation.PageObjects.csproj": {
+              "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation.PageObjects\\TrelloWebAutomation.PageObjects.csproj"
+            },
+            "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation.TestData\\TrelloWebAutomation.TestData.csproj": {
+              "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation.TestData\\TrelloWebAutomation.TestData.csproj"
             }
           }
         }

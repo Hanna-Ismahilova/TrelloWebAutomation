@@ -136,6 +136,16 @@
         }
       }
     },
+    "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation.PageObjects\\TrelloWebAutomation.PageObjects.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation.PageObjects\\TrelloWebAutomation.PageObjects.csproj",
+        "projectName": "TrelloWebAutomation.PageObjects",
+        "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation.PageObjects\\TrelloWebAutomation.PageObjects.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation\\TrelloWebAutomation.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -162,6 +172,9 @@
             "projectReferences": {
               "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\ClassLibrary1\\UITrelloAutomationFramework.csproj": {
                 "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\ClassLibrary1\\UITrelloAutomationFramework.csproj"
+              },
+              "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation.PageObjects\\TrelloWebAutomation.PageObjects.csproj": {
+                "projectPath": "C:\\Users\\Hanna_Ismahilova\\Documents\\GitHub\\TrelloWebAutomation\\TrelloWebAutomation.PageObjects\\TrelloWebAutomation.PageObjects.csproj"
               }
             }
           }
