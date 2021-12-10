@@ -1,4 +1,6 @@
-﻿using FluentAssertions;
+﻿using AventStack.ExtentReports;
+using AventStack.ExtentReports.Reporter;
+using FluentAssertions;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using UITrelloAutomationFramework.Base;
@@ -12,10 +14,22 @@ namespace TrelloWebAutomation.Tests
     public class HomeTrelloBoardTest : DriverInit
     {
         private IWebDriver webDriver;
+        ExtentReports extent = null;
+        ExtentTest test = null;
+
+        [OneTimeSetUp]
+        public void ExtentStart()
+        {
+            extent = new ExtentReports();
+            var htmlReporter = new ExtentHtmlReporter(@"C:\Users\Hanna_Ismahilova\Documents\GitHub\TrelloWebAutomation\ClassLibrary1\ExtentReports\HomeTrelloBoardTest.html");
+            extent.AttachReporter(htmlReporter);
+        }
 
         [SetUp]
         public void Setup()
         {
+            test = extent.CreateTest("Any Test").Info("Test Started");//it will start logging to the report
+
             AppConfig.Load();
             webDriver = WebDriverStart();
             LoadPage();
@@ -35,11 +49,14 @@ namespace TrelloWebAutomation.Tests
         public void TearDown()
         {
             WebDriverStop();
+            extent.Flush();
         }
 
         [Test]
         public void CreateANewTrelloBoard()
         {
+            test = extent.CreateTest("CreateANewTrelloBoard").Info("Test Started");//it will start logging to the report
+
             HomePageActionsWithBoard boardActions = new(webDriver);
             boardActions.WaitForCreateNewBoardBtn();
             boardActions.ClickOnCreateNewBoardBtn();
@@ -48,6 +65,9 @@ namespace TrelloWebAutomation.Tests
             boardActions.WaitForBoardTitleText();
             boardActions.GetBoardTitleText
                 .Should().Equals("Test");
+
+            test.Log(Status.Info, "BoardTitle is correct");
+            test.Log(Status.Pass, "Passed");
         }
 
         [Test]
